@@ -1,7 +1,7 @@
 # blackbeard-os
 blackbeard os
 
-/***************************************************************************
+***************************************************************************
 * This file is part of Blackbeard OS, a distro for Arch Linux btw.
 *
 * Copyright (c) 2024 Nicholas Jordan <blacksheepcosmo@gmail.com>
@@ -25,5 +25,5 @@ blackbeard os
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 * OR OTHER DEALINGS IN THE SOFTWARE.
 *
-***************************************************************************/
+***************************************************************************
 
