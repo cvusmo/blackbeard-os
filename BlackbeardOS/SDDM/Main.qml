@@ -23,254 +23,430 @@
 * OR OTHER DEALINGS IN THE SOFTWARE.
 *
 ***************************************************************************/
+import QtQuick 2.0
+import SddmComponents 2.0
+import QtMultimedia 5.7
 
-import QtQuick 2.11
-import QtQuick.Layouts 1.11
-import QtQuick.Controls 2.4
-import QtGraphicalEffects 1.0
-import "Components"
+import "components"
 
-Pane {
-    id: root
+Rectangle {
+    // Main Container
+    id: container
 
-    height: config.ScreenHeight || Screen.height
-    width: config.ScreenWidth || Screen.ScreenWidth
-
-    LayoutMirroring.enabled: config.ForceRightToLeft == "true" ? true : Qt.application.layoutDirection === Qt.RightToLeft
+    LayoutMirroring.enabled: Qt.locale().textDirection == Qt.RightToLeft
     LayoutMirroring.childrenInherit: true
 
-    padding: config.ScreenPadding
-    palette.button: "transparent"
-    palette.highlight: config.AccentColor
-    palette.text: config.MainColor
-    palette.buttonText: config.MainColor
-    palette.window: config.BackgroundColor
+    property int sessionIndex: session.index
 
-    font.family: config.Font
-    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
-    focus: true
+    // Inherited from SDDMComponents
+    TextConstants {
+        id: textConstants
+    }
 
-    property bool leftleft: config.HaveFormBackground == "true" &&
-                            config.PartialBlur == "false" &&
-                            config.FormPosition == "left" &&
-                            config.BackgroundImageHAlignment == "left"
+    // Set SDDM actions
+    Connections {
+        target: sddm
+        function onLoginSucceeded() {
+        }
 
-    property bool leftcenter: config.HaveFormBackground == "true" &&
-                              config.PartialBlur == "false" &&
-                              config.FormPosition == "left" &&
-                              config.BackgroundImageHAlignment == "center"
+        function onLoginFailed() {
+            error_message.color = "#dc322f"
+            error_message.text = textConstants.loginFailed
+        }
+    }
 
-    property bool rightright: config.HaveFormBackground == "true" &&
-                              config.PartialBlur == "false" &&
-                              config.FormPosition == "right" &&
-                              config.BackgroundImageHAlignment == "right"
+    // Set Font
+    FontLoader {
+        id: textFont; name: config.displayFont
+    }
 
-    property bool rightcenter: config.HaveFormBackground == "true" &&
-                               config.PartialBlur == "false" &&
-                               config.FormPosition == "right" &&
-                               config.BackgroundImageHAlignment == "center"
-
-    Item {
-        id: sizeHelper
-
+    // Background Fill
+    Rectangle {
         anchors.fill: parent
-        height: parent.height
-        width: parent.width
+        color: "black"
+    }
 
-        Rectangle {
-            id: tintLayer
-            anchors.fill: parent
-            width: parent.width
-            height: parent.height
-            color: "black"
-            opacity: config.DimBackgroundImage
-            z: 1
-        }
+    // Set Background Image
+    Image {
+        id: image1
+        anchors.fill: parent
+        //source: config.background
+        fillMode: Image.PreserveAspectCrop
+    }
 
-        Rectangle {
-            id: formBackground
-            anchors.fill: form
-            anchors.centerIn: form
-            color: root.palette.window
-            visible: config.HaveFormBackground == "true" ? true : false
-            opacity: config.PartialBlur == "true" ? 0.3 : 1
-            z: 1
-        }
+    // Clock and Login Area
+    Rectangle {
+        id: rectangle
+        anchors.fill: parent
+        color: "transparent"
 
-        LoginForm {
-            id: form
+        Column {
+            id: clock
+            property date dateTime: new Date()
+            property color color: "white"
+            y: parent.height * config.relativePositionY - clock.height / 2
+            x: parent.width * config.relativePositionX - clock.width / 2
 
-            height: virtualKeyboard.state == "visible" ? parent.height - virtualKeyboard.implicitHeight : parent.height
-            width: parent.width / 2.5
-            anchors.horizontalCenter: config.FormPosition == "center" ? parent.horizontalCenter : undefined
-            anchors.left: config.FormPosition == "left" ? parent.left : undefined
-            anchors.right: config.FormPosition == "right" ? parent.right : undefined
-            virtualKeyboardActive: virtualKeyboard.state == "visible" ? true : false
-            z: 1
-        }
-
-        Button {
-            id: vkb
-            onClicked: virtualKeyboard.switchState()
-            visible: virtualKeyboard.status == Loader.Ready && config.ForceHideVirtualKeyboardButton == "false"
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: implicitHeight
-            anchors.horizontalCenter: form.horizontalCenter
-            z: 1
-            contentItem: Text {
-                text: config.TranslateVirtualKeyboardButton || "Virtual Keyboard"
-                color: parent.visualFocus ? palette.highlight : palette.text
-                font.pointSize: root.font.pointSize * 0.8
+            Timer {
+                interval: 100; running: true; repeat: true;
+                onTriggered: clock.dateTime = new Date()
             }
-            background: Rectangle {
-                id: vkbbg
+
+            Text {
+                id: time
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: clock.color
+                text : Qt.formatTime(clock.dateTime, config.timeFormat || "hh:mm")
+                font.pointSize: 72
+                font.family: textFont.name
+            }
+
+            Text {
+                id: date
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: clock.color
+                text : Qt.formatDate(clock.dateTime, Qt.DefaultLocaleLongDate)
+                font.family: textFont.name
+                font.pointSize: 24
+            }
+        }
+
+
+        Rectangle {
+            id: login_container
+            y: clock.y + clock.height + 30
+            width: clock.width
+            height: parent.height * 0.08
+            color: "transparent"
+            anchors.left: clock.left
+
+            Rectangle {
+                id: username_row
+                height: parent.height * 0.36
                 color: "transparent"
+                anchors.left: parent.left
+                anchors.leftMargin: 0
+                anchors.right: parent.right
+                anchors.rightMargin: 0
+                transformOrigin: Item.Center
+                anchors.margins: 10
+
+                Text {
+                    id: username_label
+                    width: parent.width * 0.27
+                    height: parent.height * 0.66
+                    horizontalAlignment: Text.AlignLeft
+                    font.family: textFont.name
+                    font.bold: true
+                    font.pixelSize: 16
+                    color: "white"
+                    text: "Username"
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                TextBox {
+                    id: username_input_box
+                    height: parent.height
+                    text: userModel.lastUser
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: username_label.right
+                    anchors.leftMargin: config.usernameLeftMargin
+                    anchors.right: parent.right
+                    anchors.rightMargin: 0
+                    font: textFont.name
+                    color: "#25000000"
+                    borderColor: "transparent"
+                    textColor: "white"
+
+                    Keys.onPressed: {
+                        if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                            sddm.login(username_input_box.text, password_input_box.text, session.index)
+                            event.accepted = true
+                        }
+                    }
+
+                    KeyNavigation.backtab: password_input_box
+                    KeyNavigation.tab: password_input_box
+                }
+            }
+
+            Rectangle {
+                id: password_row
+                y: username_row.height + 10
+                height: parent.height * 0.36
+                color: "transparent"
+                anchors.right: parent.right
+                anchors.rightMargin: 0
+                anchors.left: parent.left
+                anchors.leftMargin: 0
+
+                Text {
+                    id: password_label
+                    width: parent.width * 0.27
+                    text: textConstants.password
+                    anchors.verticalCenter: parent.verticalCenter
+                    horizontalAlignment: Text.AlignLeft
+                    font.family: textFont.name
+                    font.bold: true
+                    font.pixelSize: 16
+                    color: "white"
+                }
+
+                PasswordBox {
+                    id: password_input_box
+                    height: parent.height
+                    font: textFont.name
+                    color: "#25000000"
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+                    anchors.rightMargin: parent.height // this sets button width, this way its a square
+                    anchors.left: password_label.right
+                    anchors.leftMargin: config.passwordLeftMargin
+                    borderColor: "transparent"
+                    textColor: "white"
+                    tooltipBG: "#25000000"
+                    tooltipFG: "#dc322f"
+                    image: "components/resources/warning_red.png"
+                    onTextChanged: {
+                        if (password_input_box.text == "") {
+                            clear_passwd_button.visible = false
+                        }
+                        if (password_input_box.text != "" && config.showClearPasswordButton != "false") {
+                            clear_passwd_button.visible = true
+                        }
+                    }
+
+                    Keys.onPressed: {
+                        if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                            sddm.login(username_input_box.text, password_input_box.text, session.index)
+                            event.accepted = true
+                        }
+                    }
+
+                    KeyNavigation.backtab: username_input_box
+                    KeyNavigation.tab: login_button
+                }
+
+                Button {
+                    id: clear_passwd_button
+                    height: parent.height
+                    width: parent.height
+                    color: "transparent"
+                    text: "x"
+                    font: textFont.name
+
+                    border.color: "transparent"
+                    border.width: 0
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+                    anchors.leftMargin: 0
+                    anchors.rightMargin: parent.height
+
+                    disabledColor: "#dc322f"
+                    activeColor: "#393939"
+                    pressedColor: "#2aa198"
+
+                    onClicked: {
+                        password_input_box.text=''
+                        password_input_box.focus = true
+                    }
+                }
+
+                Button {
+                    id: login_button
+                    height: parent.height
+                    color: "#393939"
+                    text: ">"
+                    border.color: "#00000000"
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: password_input_box.right
+                    anchors.right: parent.right
+                    disabledColor: "#dc322f"
+                    activeColor: "#268bd2"
+                    pressedColor: "#2aa198"
+                    textColor: "white"
+                    font: textFont.name
+
+                    onClicked: sddm.login(username_input_box.text, password_input_box.text, session.index)
+
+                    KeyNavigation.backtab: password_input_box
+                    KeyNavigation.tab: reboot_button
+                }
+
+                Text {
+                    id: error_message
+                    height: parent.height
+                    font.family: textFont.name
+                    font.pixelSize: 12
+                    color: "white"
+                    anchors.top: password_input_box.bottom
+                    anchors.left: password_input_box.left
+                    anchors.leftMargin: 0
+                }
+            }
+
+        }
+    }
+
+    // Top Bar
+    Rectangle {
+        id: actionBar
+        width: parent.width
+        height: parent.height * 0.04
+        anchors.top: parent.top;
+        anchors.horizontalCenter: parent.horizontalCenter
+        color: "transparent"
+        visible: config.showTopBar != "false"
+
+        Row {
+            id: row_left
+            anchors.left: parent.left
+            anchors.margins: 5
+            height: parent.height
+            spacing: 10
+
+            ComboBox {
+                id: session
+                width: 145
+                height: 20
+                anchors.verticalCenter: parent.verticalCenter
+                color: "transparent"
+                arrowColor: "transparent"
+                textColor: "#505050"
+                borderColor: "transparent"
+                hoverColor: "#5692c4"
+
+                model: sessionModel
+                index: sessionModel.lastIndex
+
+                KeyNavigation.backtab: shutdown_button
+                KeyNavigation.tab: password_input_box
+            }
+
+            ComboBox {
+                id: language
+
+                model: keyboard.layouts
+                index: keyboard.currentLayout
+                width: 50
+                height: 20
+                anchors.verticalCenter: parent.verticalCenter
+                color: "transparent"
+                arrowColor: "transparent"
+                textColor: "white"
+                borderColor: "transparent"
+                hoverColor: "#5692c4"
+
+                onValueChanged: keyboard.currentLayout = id
+
+                Connections {
+                    target: keyboard
+
+                    function onCurrentLayoutChanged() {
+                        combo.index = keyboard.currentLayout
+                    }
+                }
+
+                rowDelegate: Rectangle {
+                    color: "transparent"
+
+                    Text {
+                        anchors.margins: 4
+                        anchors.top: parent.top
+                        anchors.bottom: parent.bottom
+
+                        verticalAlignment: Text.AlignVCenter
+
+                        text: modelItem ? modelItem.modelData.shortName : "zz"
+                        font.family: textFont.name
+                        font.pixelSize: 14
+                        color: "#505050"
+                    }
+                }
+                KeyNavigation.backtab: session
+                KeyNavigation.tab: username_input_box
             }
         }
 
-        Loader {
-            id: virtualKeyboard
-            source: "Components/VirtualKeyboard.qml"
-            state: "hidden"
-            property bool keyboardActive: item ? item.active : false
-            onKeyboardActiveChanged: keyboardActive ? state = "visible" : state = "hidden"
-            width: parent.width
-            z: 1
-            function switchState() { state = state == "hidden" ? "visible" : "hidden" }
-            states: [
-                State {
-                    name: "visible"
-                    PropertyChanges {
-                        target: form
-                        systemButtonVisibility: false
-                        clockVisibility: false
-                    }
-                    PropertyChanges {
-                        target: virtualKeyboard
-                        y: root.height - virtualKeyboard.height
-                        opacity: 1
-                    }
-                },
-                State {
-                    name: "hidden"
-                    PropertyChanges {
-                        target: virtualKeyboard
-                        y: root.height - root.height/4
-                        opacity: 0
-                    }
+        Row {
+            id: row_right
+            height: parent.height
+            anchors.right: parent.right
+            anchors.margins: 5
+            spacing: 10
+
+            ImageButton {
+                id: reboot_button
+                height: parent.height
+                source: "components/resources/reboot.svg"
+
+                visible: sddm.canReboot
+                onClicked: sddm.reboot()
+                KeyNavigation.backtab: login_button
+                KeyNavigation.tab: shutdown_button
+            }
+
+            ImageButton {
+                id: shutdown_button
+                height: parent.height
+                source: "components/resources/shutdown.svg"
+                visible: sddm.canPowerOff
+                onClicked: sddm.powerOff()
+                KeyNavigation.backtab: reboot_button
+                KeyNavigation.tab: session
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        // Set Focus
+        /* if (username_input_box.text == "") */
+        /*     username_input_box.focus = true */
+        /* else */
+        /*     password_input_box.focus = true */
+
+        video1.focus = true
+
+        // load and randomize playlist
+        var time = parseInt(new Date().toLocaleTimeString(Qt.locale(),'h'))
+        if ( time >= config.day_time_start && time <= config.day_time_end ) {
+            playlist1.load(Qt.resolvedUrl(config.background_vid_day), 'm3u')
+            playlist2.load(Qt.resolvedUrl(config.background_vid_day), 'm3u')
+            //image1.source = config.background_img_day
+            if ( config.backgroud_img_day !== null ) {
+                //image1.source = config.background_img_day
+                var fileType = config.background_img_day.substring(config.background_img_day.lastIndexOf(".") + 1)
+                console.log(fileType)
+                if (fileType === "gif") {
+                        animatedGIF1.source = config.background_img_day
+                } else {
+                        image1.source = config.background_img_day
                 }
-            ]
-            transitions: [
-                Transition {
-                    from: "hidden"
-                    to: "visible"
-                    SequentialAnimation {
-                        ScriptAction {
-                            script: {
-                                virtualKeyboard.item.activated = true;
-                                Qt.inputMethod.show();
-                            }
-                        }
-                        ParallelAnimation {
-                            NumberAnimation {
-                                target: virtualKeyboard
-                                property: "y"
-                                duration: 100
-                                easing.type: Easing.OutQuad
-                            }
-                            OpacityAnimator {
-                                target: virtualKeyboard
-                                duration: 100
-                                easing.type: Easing.OutQuad
-                            }
-                        }
-                    }
-                },
-                Transition {
-                    from: "visible"
-                    to: "hidden"
-                    SequentialAnimation {
-                        ParallelAnimation {
-                            NumberAnimation {
-                                target: virtualKeyboard
-                                property: "y"
-                                duration: 100
-                                easing.type: Easing.InQuad
-                            }
-                            OpacityAnimator {
-                                target: virtualKeyboard
-                                duration: 100
-                                easing.type: Easing.InQuad
-                            }
-                        }
-                        ScriptAction {
-                            script: {
-                                Qt.inputMethod.hide();
-                            }
-                        }
-                    }
+            }
+        } else {
+            playlist1.load(Qt.resolvedUrl(config.background_vid_night), 'm3u')
+            playlist2.load(Qt.resolvedUrl(config.background_vid_night), 'm3u')
+            if ( config.backgroud_img_night !== null ) {
+                var fileType = config.background_img_night.substring(config.background_img_night.lastIndexOf(".") + 1)
+                console.log(fileType)
+                if (fileType === "gif") {
+                        animatedGIF1.source = config.background_img_night
+                } else {
+                        image1.source = config.background_img_night
                 }
-            ]
+            }
         }
 
-        Image {
-            id: backgroundImage
-
-            height: parent.height
-            width: config.HaveFormBackground == "true" && config.FormPosition != "center" && config.PartialBlur != "true" ? parent.width - formBackground.width : parent.width
-            anchors.left: leftleft ||
-                          leftcenter ?
-                                formBackground.right : undefined
-
-            anchors.right: rightright ||
-                           rightcenter ?
-                                formBackground.left : undefined
-
-            horizontalAlignment: config.BackgroundImageHAlignment == "left" ?
-                                 Image.AlignLeft :
-                                 config.BackgroundImageHAlignment == "right" ?
-                                 Image.AlignRight : Image.AlignHCenter
-
-            verticalAlignment: config.BackgroundImageVAlignment == "top" ?
-                               Image.AlignTop :
-                               config.BackgroundImageVAlignment == "bottom" ?
-                               Image.AlignBottom : Image.AlignVCenter
-
-            source: config.background || config.Background
-            fillMode: config.ScaleImageCropped == "true" ? Image.PreserveAspectCrop : Image.PreserveAspectFit
-            asynchronous: true
-            cache: true
-            clip: true
-            mipmap: true
+        for (var k = 0; k < Math.ceil(Math.random() * 10) ; k++) {
+            playlist1.shuffle()
+            playlist2.shuffle()
         }
 
-        MouseArea {
-            anchors.fill: backgroundImage
-            onClicked: parent.forceActiveFocus()
+        if (config.showLoginButton == "false") {
+            login_button.visible = false
+            password_input_box.anchors.rightMargin = 0
+            clear_passwd_button.anchors.rightMargin = 0
         }
-
-        ShaderEffectSource {
-            id: blurMask
-
-            sourceItem: backgroundImage
-            width: form.width
-            height: parent.height
-            anchors.centerIn: form
-            sourceRect: Qt.rect(x,y,width,height)
-            visible: config.FullBlur == "true" || config.PartialBlur == "true" ? true : false
-        }
-
-        GaussianBlur {
-            id: blur
-
-            height: parent.height
-            width: config.FullBlur == "true" ? parent.width : form.width
-            source: config.FullBlur == "true" ? backgroundImage : blurMask
-            radius: config.BlurRadius
-            samples: config.BlurRadius * 2 + 1
-            cached: true
-            anchors.centerIn: config.FullBlur == "true" ? parent : form
-            visible: config.FullBlur == "true" || config.PartialBlur == "true" ? true : false
-        }
+        clear_passwd_button.visible = false
     }
 }
