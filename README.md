@@ -24,4 +24,6 @@
   OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+Heavily inspired and modified using https://github.com/catppuccin and https://github.com/MarianArlt/sddm-sugar-dark
 
+Still very early in creating the SDDM.
