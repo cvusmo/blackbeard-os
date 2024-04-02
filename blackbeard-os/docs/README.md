@@ -25,7 +25,7 @@
 
 
 ## Project Structure
-
+```
 blackbeard-os/
 │
 ├── boot/
@@ -51,7 +51,7 @@ blackbeard-os/
 │
 └── dist/                     # Distribution artifacts, pre-built images, packages
     ├── images/               # Pre-built OS images for direct download
-    └── packages/             # Custom packages or binaries for installation
+    └── packages/             # Custom packages or binaries for installation ```
 
 
 Each directory is equipped with a `README.md` providing more details on its contents and purpose.
