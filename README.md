@@ -4,7 +4,7 @@
 
 <p align="center">
 This file is part of Blackbeard-OS, a distro for Arch Linux btw.
-
+```bash
   Copyright (c) 2024 Nicholas Jordan <blacksheepcosmo@gmail.com>
 
 * Permission is hereby granted, free of charge, to any person
@@ -24,7 +24,7 @@ This file is part of Blackbeard-OS, a distro for Arch Linux btw.
   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
-  OR OTHER DEALINGS IN THE SOFTWARE.
+  OR OTHER DEALINGS IN THE SOFTWARE.```
 
 
 Heavily inspired and modified using https://github.com/catppuccin and https://github.com/MarianArlt/sddm-sugar-dark + Dr460nized-Sugar-Candy
