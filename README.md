@@ -3,7 +3,7 @@
 </p>
 
 <p align="left">
-* This file is part of Blackbeard-OS, a distro for Arch Linux btw.
+This file is part of Blackbeard-OS, a distro for Arch Linux btw.
 
   Copyright (c) 2024 Nicholas Jordan <blacksheepcosmo@gmail.com>
 
