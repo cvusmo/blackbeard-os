@@ -1,7 +1,10 @@
-# blackbeard-os
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/712174300291137638/1225122047890297023/blackbeard-os-icon.png?ex=661ffad1&is=660d85d1&hm=eec3f1f4dd43c71d1d759519a9cbc7ce3af3d31ece4adffc4e2a6da135cfc878&" alt="Blackbeard OS Icon" width="256" height="256">
+</p>
 
-* This file is part of Blackbeard OS, a distro for Arch Linux btw.
-
+<p align="center">
+This file is part of Blackbeard-OS, a distro for Arch Linux btw.
+```bash
   Copyright (c) 2024 Nicholas Jordan <blacksheepcosmo@gmail.com>
 
 * Permission is hereby granted, free of charge, to any person
@@ -21,9 +24,9 @@
   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
-  OR OTHER DEALINGS IN THE SOFTWARE.
+  OR OTHER DEALINGS IN THE SOFTWARE.```
 
 
 Heavily inspired and modified using https://github.com/catppuccin and https://github.com/MarianArlt/sddm-sugar-dark + Dr460nized-Sugar-Candy
+</p>
 
-Still very early in creating the SDDM.
