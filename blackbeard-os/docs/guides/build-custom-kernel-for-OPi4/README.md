@@ -1,6 +1,6 @@
 # Build custom Linux Kernel for Orange Pi 4 LTS
-*All Commands use FISH shell
-*The 'λ' is used as a prompt indicator
+- All Commands use FISH shell
+-'λ' is used as a prompt indicator
 
 # Step 1: Linaro ARM Cross-Compiler Installation
 To download the latest release visit: https://releases.linaro.org/components/toolchain/binaries/, choose a release and download the tarball gcc-linaro--x86_64_arm-linux-gnueabihf.tar.xz or simply follow commands below to install 7.5-2019.12. This project uses 7.5-2019.12.
