@@ -164,7 +164,7 @@ Requirements:
 2. Partition the image file (e.g., using parted or fdisk)
 ```
 λ losetup -fP blackbeard-os-0.0.1-opi4-lts.img
-λ fdisk /dev/loop0
+λ sudo fdisk /dev/loop0
 ```
 Follow these steps to create a partition:
 
@@ -177,14 +177,10 @@ Follow these steps to create a partition:
 - Enter 83 as the partition type for Linux filesystem (ext4).
 - Press w to write changes and exit.    
 
-```
-λ sudo losetup -d /dev/loop0
-```
-
 3. Format the partitions
 ```
-λ mkfs.vfat /dev/loopXp1  # Format boot partition as FAT32
-λ mkfs.ext4 /dev/loopXp2  # Format root file system partition as ext4
+λ sudo mkfs.vfat /dev/loop0p1  # Format boot partition as FAT32
+λ sudo mkfs.ext4 /dev/loop0p2  # Format root file system partition as ext4
 ```
 4. Mount the partitions
 ```
