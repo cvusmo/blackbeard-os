@@ -174,20 +174,11 @@ Follow these steps to create a partition:
     - Press Enter to accept the default start sector.
     - Press Enter to accept the default end sector (to use the entire disk).
     - Press t to change the partition type.
-    - Enter 83 as the partition type for Linux filesystem (ext4).
-    - Press n to create another new partition (optional).
-    - Choose the partition type (p for primary).
-    - Specify the partition number (e.g., 2).
-    - Press Enter to accept the default start sector.
-    - Press Enter to accept the default end sector (to use the remaining space).
-    - Press t to change the partition type.
-    - Enter 83 as the partition type for Linux filesystem (ext4).
-    - Press w to write changes and exit.  
+    - Enter 83 as the partition type for Linux filesystem (ext4). 
 
 3. Format the partitions
 ```
-λ sudo mkfs.vfat /dev/loop0p1  # Format boot partition as FAT32
-λ sudo mkfs.ext4 /dev/loop0p2  # Format root file system partition as ext4
+λ sudo mkfs.vfat /dev/loop0p1  # Format boot partition 
 ```
 4. Mount the partitions
 ```
