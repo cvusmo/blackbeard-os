@@ -72,9 +72,9 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 
 #### Configure and build U-boot
 Navigate to ~/u-boot/configs to search for <orangepi_model>_defconfig as of 20240404
--orangepi-5-plus-rk3588_defconfig
--orangepi-5-rk3588s_defconfig
--and many other <orangepi_model>_defconfigs
+- orangepi-5-plus-rk3588_defconfig
+- orangepi-5-rk3588s_defconfig
+- more <orangepi_model>_defconfigs
 ```
 λ make ARCH=arm CROSS_COMPILE=$CC distclean
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
