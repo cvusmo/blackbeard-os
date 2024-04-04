@@ -18,8 +18,8 @@ Ensure the CROSS_COMPILE environment variable is correctly set. This variable sp
 ```λ echo $CROSS_COMPILE```
 
 ## Save the path to the extracted compiler binaries
-### Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
-λ export CC=`pwd`/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
+```λ export CC=`pwd`/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-```
 
 ## Set the CROSS_COMPILE Variable
 λ set -x CROSS_COMPILE $PWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
@@ -78,10 +78,9 @@ The process of building the Linux kernel involves compiling the kernel source co
 If the kernel configuration is correct, the following message should appear:
 ```
 #
+# configuration written to .config
 #
-#configuration written to .config
 ```
-
 ## Customize Kernel Configuration (Optional)
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE menuconfig
 
