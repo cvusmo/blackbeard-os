@@ -183,9 +183,8 @@ Follow these steps to create a partition:
 ```
 4. Mount the partitions
 ```
-λ mkdir boot rootfs
-λ sudo mount /dev/loopXp1 boot
-λ sudo mount /dev/loopXp2 rootfs
+λ mkdir boot
+λ sudo mount /dev/loop0p1 boot
 ```
 5. Copy files to the image
 ```
