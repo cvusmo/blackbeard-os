@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-This file is part of Blackbeard-OS, a distro for Arch Linux btw.
+This file is part of Blackbeard-OS, a distro for ARM Arch Linux btw.
   
 ```bash
   Copyright (c) 2024 Nicholas Jordan <blacksheepcosmo@gmail.com>
