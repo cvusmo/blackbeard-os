@@ -175,6 +175,7 @@ Follow these steps to create a partition:
     - Press Enter to accept the default end sector (to use the entire disk).
     - Press t to change the partition type.
     - Enter 83 as the partition type for Linux filesystem (ext4). 
+    - Press w to save and exit.
 
 3. Format the partitions
 ```
