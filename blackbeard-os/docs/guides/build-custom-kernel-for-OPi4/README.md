@@ -18,18 +18,18 @@
 - You can verify its path by running:
 ```λ echo $CROSS_COMPILE```
 
-## Save the path to the extracted compiler binaries
+### Save the path to the extracted compiler binaries
 - Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
 ```λ export CC=`pwd`/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-```
 
-## Set the CROSS_COMPILE Variable
+### Set the CROSS_COMPILE Variable
 λ set -x CROSS_COMPILE $PWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 ## Verify the installation
-### To verify that the cross-compiler toolchain is correctly installed, execute following command in terminal with FISH shell:
-λ $CROSS_COMPILE"gcc" --version
+- To verify that the cross-compiler toolchain is correctly installed, execute following command in terminal with FISH shell:
+```λ $CROSS_COMPILE"gcc" --version```
 
-### The output should resemble:
+- The output should resemble:
 ```
 arm-linux-gnueabihf-gcc (Linaro GCC 7.5-2019.12) 7.5.0
 Copyright (C) 2017 Free Software Foundation, Inc.
