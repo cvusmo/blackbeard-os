@@ -14,11 +14,12 @@
 ```λ tar -xJf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz```
 
 ### Check the path for CROSS_COMPILE
-Ensure the CROSS_COMPILE environment variable is correctly set. This variable specifies the prefix used for cross-compilation tools. You can verify its path by running:
+- Ensure the CROSS_COMPILE environment variable is correctly set. This variable specifies the prefix used for cross-compilation tools.
+- You can verify its path by running:
 ```λ echo $CROSS_COMPILE```
 
 ## Save the path to the extracted compiler binaries
-Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
+- Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
 ```λ export CC=`pwd`/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-```
 
 ## Set the CROSS_COMPILE Variable
