@@ -116,37 +116,6 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE menuconfig
 ```
 
-#### Save the required DTB file
-Option 1: SSH into Orange Pi from main PC to run SCP
-``` 
-λ scp orangepi@orangepi /boot/dtb-5.10.43/rockchip/<board>.dtb username@hostname:/path/to/destination/directory
-Now go to location of <build>.dtb and save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
-```
-Option 2: Locate <build>.dtb on OrangePi and save to USB.
-```
-λ find / -name "*.dtb"
-Now go to location of <build>.dtb, copy and save onto USB
-Save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
-```
-
-#### Build the Kernel Image and Modules 
-```
-λ make -j$(nproc) ARCH=arm CROSS_COMPILE=$CROSS_COMPILE zImage modules <board>.dtb
-```
-
-#### Install Kernel Modules
-```
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE modules_install
-```
-
-# Step 4: Root File System (ArchLinuxARM)
-Download a root file system and extract using the following commands:
-
-```
-λ wget -c http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
-λ tar -xvf ArchLinuxARM-aarch64-latest.tar.gz
-```
-
 # Step 5: Setup MicroSD card
 Setup microSD card in to boot Orange Pi
 ```
@@ -155,4 +124,53 @@ Requirements:
     - Linux kernel image 
     - <board>.dtb
     - root file system.
+```
+
+1. Create an empty image file
+```
+dd if=/dev/zero of=blackbeard-os-0.0.1-opi4-lts.img bs=1M count=2048
+```
+2. Partition the image file (e.g., using parted or fdisk)
+```
+losetup -fP blackbeard-os-0.0.1-opi4-lts.img
+fdisk /dev/loop0
+- follow these steps to create a partition:
+
+    Press n to create a new partition.
+    Choose the partition type (p for primary).
+    Specify the partition number (e.g., 1).
+    Press Enter to accept the default start sector.
+    Press Enter to accept the default end sector (to use the entire disk).
+    Press t to change the partition type.
+    Enter 83 as the partition type for Linux filesystem (ext4).
+    Press w to write changes and exit.
+sudo losetup -d /dev/loop0
+```
+
+3. Format the partitions
+```
+mkfs.vfat /dev/loopXp1  # Format boot partition as FAT32
+mkfs.ext4 /dev/loopXp2  # Format root file system partition as ext4
+```
+4. Mount the partitions
+```
+mkdir boot rootfs
+sudo mount /dev/loopXp1 boot
+sudo mount /dev/loopXp2 rootfs
+```
+5. Copy files to the image
+```
+cp u-boot-sunxi-with-sp1.bin boot
+cp zImage boot
+cp <board>.dtb boot
+cp -a ArchLinuxARM/* rootfs  # Copy root file system contents
+```
+6. Unmount the partitions
+```
+sudo umount boot
+sudo umount rootfs
+```
+7. Compress the image file
+```
+xz -z -k -9 blackbeard-os-0.0.1-opi4-lts.img
 ```
