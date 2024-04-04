@@ -52,7 +52,12 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 ```
 λ git clone https://github.com/u-boot/u-boot
 λ cd u-boot/
-``` 
+```
+
+#### Install swig
+```
+λ sudo pacman -S swig
+```
 
 #### Check for current version
 ```
