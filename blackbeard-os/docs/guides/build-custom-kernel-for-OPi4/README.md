@@ -76,7 +76,7 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 ```
 
 #### Replace <orangepi_model> with appropriate model name of your Orange Pi Board
-- Example: orangepi_4_lts_defconfig
+- Example: ofile:///home/blackbeard/Projects/Blackbeard-OS/blackbeard-os/blackbeard-os/docs/guides/build-custom-kernel-for-OPi4/ArchLinuxARMrangepi_4_lts_defconfig
 ```
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
 ```
@@ -114,6 +114,37 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 #### Customize Kernel Configuration (Optional)
 ```
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE menuconfig
+```
+
+#### Save the required DTB file
+Option 1: SSH into Orange Pi from main PC to run SCP
+``` 
+λ scp orangepi@orangepi /boot/dtb-5.10.43/rockchip/<board>.dtb username@hostname:/path/to/destination/directory
+Now go to location of <build>.dtb and save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
+```
+Option 2: Locate <build>.dtb on OrangePi and save to USB.
+```
+λ find / -name "*.dtb"
+Now go to location of <build>.dtb, copy and save onto USB
+Save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
+```
+
+#### Build the Kernel Image and Modules 
+```
+λ make -j$(nproc) ARCH=arm CROSS_COMPILE=$CROSS_COMPILE zImage modules <board>.dtb
+```
+
+#### Install Kernel Modules
+```
+λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE modules_install
+```
+
+# Step 4: Root File System (ArchLinuxARM)
+Download a root file system and extract using the following commands:
+
+```
+λ wget -c http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
+λ tar -xvf ArchLinuxARM-aarch64-latest.tar.gz
 ```
 
 # Step 5: Setup MicroSD card
@@ -177,3 +208,4 @@ Follow these steps to create a partition:
 ```
 λ xz -z -k -9 blackbeard-os-0.0.1-opi4-lts.img
 ```
+
