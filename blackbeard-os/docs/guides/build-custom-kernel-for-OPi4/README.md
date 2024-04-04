@@ -73,8 +73,8 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 #### Configure and build U-boot
 ```
 λ make ARCH=arm CROSS_COMPILE=$CC distclean
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE _defconfig
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE defconfig
+λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
+λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE
 ```
 
 # Step 3: Build Linux Kernel
