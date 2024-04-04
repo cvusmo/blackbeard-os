@@ -53,7 +53,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # Step 2: Build the Bootloader
 A bootloader is a program that loads the Operating System kernel from secondary memory to primary memory. U-Boot is an open source bootloader that this guide will be using to load Linux. Download U-boot from Github using the following commands:
 
-## Clone u-boot
+#### Clone u-boot
 ```
 λ git clone https://github.com/u-boot/u-boot
 λ cd u-boot/
@@ -63,17 +63,23 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 ```
 λ git describe --tags
 ```
+- If v2024.04 is outdated, replace it with the latest version obtained from the previous command output
 
-## If v2024.04 is outdated, replace it with the latest version obtained from the previous command output 
-### Creates 'tmp' branch
+#### Create 'tmp' branch
+```
 λ git checkout v2024.04 -b tmp
+```
 
-## Configure and build U-boot
+#### Configure and build U-boot
+```
 λ make ARCH=arm CROSS_COMPILE=$CC distclean
+```
 
-## Replace <orangepi_model> with appropriate model name of your Orange Pi Board
-### Example: orangepi_4_lts_defconfig
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig 
+#### Replace <orangepi_model> with appropriate model name of your Orange Pi Board
+- Example: orangepi_4_lts_defconfig
+```
+λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
+```
 
 # Step 3: Build Linux Kernel
 - The process of building the Linux kernel involves compiling the kernel source code into executable binaries and modules that form the core of the operating system. By building the kernel, you customize its configuration, optimize performance, and incorporate necessary device drivers and features tailored to your system's requirements.
