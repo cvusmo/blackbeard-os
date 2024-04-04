@@ -149,8 +149,10 @@ Download a root file system and extract using the following commands:
 
 # Step 5: Setup MicroSD card
 Setup microSD card in to boot Orange Pi
+```
 Requirements:
     - file u-boot-sunxi-with-spl.bin
     - Linux kernel image 
     - <board>.dtb
     - root file system.
+```
