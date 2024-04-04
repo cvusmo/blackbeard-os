@@ -80,6 +80,7 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 ```
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
 ```
+```
 
 # Step 3: Build Linux Kernel
 - The process of building the Linux kernel involves compiling the kernel source code into executable binaries and modules that form the core of the operating system. By building the kernel, you customize its configuration, optimize performance, and incorporate necessary device drivers and features tailored to your system's requirements.
@@ -116,8 +117,20 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE menuconfig
 ```
 
-#### Build the Kernel Image and Modules
-Example of <board>: 
+#### Save the required DTB file
+Option 1: SSH into Orange Pi from main PC to run SCP
+``` 
+λ scp orangepi@orangepi /boot/dtb-5.10.43/rockchip/<board>.dtb username@hostname:/path/to/destination/directory
+Now go to location of <build>.dtb and save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
+```
+Option 2: Locate <build>.dtb on OrangePi and save to USB.
+```
+λ find / -name "*.dtb"
+Now go to location of <build>.dtb, copy and save onto USB
+Save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
+```
+
+#### Build the Kernel Image and Modules 
 ```
 λ make -j$(nproc) ARCH=arm CROSS_COMPILE=$CROSS_COMPILE zImage modules <board>.dtb
 ```
@@ -126,3 +139,19 @@ Example of <board>:
 ```
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE modules_install
 ```
+
+# Step 4: Root File System (ArchLinuxARM)
+Download a root file system and extract using the following commands:
+
+```
+λ wget -c http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
+λ tar -xvf ArchLinuxARM-aarch64-latest.tar.gz
+```
+
+# Step 5: Setup MicroSD card
+Setup microSD card in to boot Orange Pi
+Requirements:
+    - file u-boot-sunxi-with-spl.bin
+    - Linux kernel image 
+    - <board>.dtb
+    - root file system.
