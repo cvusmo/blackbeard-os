@@ -168,14 +168,21 @@ Requirements:
 ```
 Follow these steps to create a partition:
 
-- Press n to create a new partition.
-- Choose the partition type (p for primary).
-- Specify the partition number (e.g., 1).
-- Press Enter to accept the default start sector.
-- Press Enter to accept the default end sector (to use the entire disk).
-- Press t to change the partition type.
-- Enter 83 as the partition type for Linux filesystem (ext4).
-- Press w to write changes and exit.    
+    - Press n to create a new partition.
+    - Choose the partition type (p for primary).
+    - Specify the partition number (e.g., 1).
+    - Press Enter to accept the default start sector.
+    - Press Enter to accept the default end sector (to use the entire disk).
+    - Press t to change the partition type.
+    - Enter 83 as the partition type for Linux filesystem (ext4).
+    - Press n to create another new partition (optional).
+    - Choose the partition type (p for primary).
+    - Specify the partition number (e.g., 2).
+    - Press Enter to accept the default start sector.
+    - Press Enter to accept the default end sector (to use the remaining space).
+    - Press t to change the partition type.
+    - Enter 83 as the partition type for Linux filesystem (ext4).
+    - Press w to write changes and exit.  
 
 3. Format the partitions
 ```
