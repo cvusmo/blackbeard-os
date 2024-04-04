@@ -134,6 +134,7 @@ dd if=/dev/zero of=blackbeard-os-0.0.1-opi4-lts.img bs=1M count=2048
 ```
 losetup -fP blackbeard-os-0.0.1-opi4-lts.img
 fdisk /dev/loop0
+```
 - follow these steps to create a partition:
 
     Press n to create a new partition.
@@ -144,6 +145,7 @@ fdisk /dev/loop0
     Press t to change the partition type.
     Enter 83 as the partition type for Linux filesystem (ext4).
     Press w to write changes and exit.
+```
 sudo losetup -d /dev/loop0
 ```
 
