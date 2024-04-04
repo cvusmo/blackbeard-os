@@ -163,7 +163,7 @@ Requirements:
 ```
 2. Partition the image file (e.g., using parted or fdisk)
 ```
-λ losetup -fP blackbeard-os-0.0.1-opi4-lts.img
+λ sudo losetup -fP blackbeard-os-0.0.1-opi4-lts.img
 λ sudo fdisk /dev/loop0
 ```
 Follow these steps to create a partition:
