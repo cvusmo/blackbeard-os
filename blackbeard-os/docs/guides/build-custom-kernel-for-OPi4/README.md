@@ -139,7 +139,7 @@ Save the <build>.dtb at ~/linux-x.x.x/arch/arm/boot/dts/<build>.dtb
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE modules_install
 ```
 
-# Step 4: Root File System (ArchLinuxARM)
+# Step 4: Root File System (I use ArchLinuxARM, BTW!)
 Download a root file system and extract using the following commands:
 
 ```
