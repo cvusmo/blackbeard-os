@@ -7,15 +7,15 @@
 - Option 2: simply follow commands below to install 7.5-2019.12. 
 - This project uses 7.5-2019.12.
 
-## Download the Linaro ARM cross-compiler toolchain
+### Download the Linaro ARM cross-compiler toolchain
 ```λ wget -c https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz```
 
-## Extract the downloaded tarball
-λ tar -xJf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+### Extract the downloaded tarball
+```λ tar -xJf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz```
 
-## Check the path for CROSS_COMPILE
-### Ensure the CROSS_COMPILE environment variable is correctly set. This variable specifies the prefix used for cross-compilation tools. You can verify its path by running:
-λ echo $CROSS_COMPILE
+### Check the path for CROSS_COMPILE
+Ensure the CROSS_COMPILE environment variable is correctly set. This variable specifies the prefix used for cross-compilation tools. You can verify its path by running:
+```λ echo $CROSS_COMPILE```
 
 ## Save the path to the extracted compiler binaries
 ### Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
