@@ -128,52 +128,52 @@ Requirements:
 
 1. Create an empty image file
 ```
-dd if=/dev/zero of=blackbeard-os-0.0.1-opi4-lts.img bs=1M count=2048
+λ dd if=/dev/zero of=blackbeard-os-0.0.1-opi4-lts.img bs=1M count=2048
 ```
 2. Partition the image file (e.g., using parted or fdisk)
 ```
-losetup -fP blackbeard-os-0.0.1-opi4-lts.img
-fdisk /dev/loop0
+λ losetup -fP blackbeard-os-0.0.1-opi4-lts.img
+λ fdisk /dev/loop0
 ```
-follow these steps to create a partition:
+Follow these steps to create a partition:
 
-Press n to create a new partition.
-Choose the partition type (p for primary).
-Specify the partition number (e.g., 1).
-Press Enter to accept the default start sector.
-Press Enter to accept the default end sector (to use the entire disk).
-Press t to change the partition type.
-Enter 83 as the partition type for Linux filesystem (ext4).
-Press w to write changes and exit.    
+- Press n to create a new partition.
+- Choose the partition type (p for primary).
+- Specify the partition number (e.g., 1).
+- Press Enter to accept the default start sector.
+- Press Enter to accept the default end sector (to use the entire disk).
+- Press t to change the partition type.
+- Enter 83 as the partition type for Linux filesystem (ext4).
+- Press w to write changes and exit.    
 
 ```
-sudo losetup -d /dev/loop0
+λ sudo losetup -d /dev/loop0
 ```
 
 3. Format the partitions
 ```
-mkfs.vfat /dev/loopXp1  # Format boot partition as FAT32
-mkfs.ext4 /dev/loopXp2  # Format root file system partition as ext4
+λ mkfs.vfat /dev/loopXp1  # Format boot partition as FAT32
+λ mkfs.ext4 /dev/loopXp2  # Format root file system partition as ext4
 ```
 4. Mount the partitions
 ```
-mkdir boot rootfs
-sudo mount /dev/loopXp1 boot
-sudo mount /dev/loopXp2 rootfs
+λ mkdir boot rootfs
+λ sudo mount /dev/loopXp1 boot
+λ sudo mount /dev/loopXp2 rootfs
 ```
 5. Copy files to the image
 ```
-cp u-boot-sunxi-with-sp1.bin boot
-cp zImage boot
-cp <board>.dtb boot
-cp -a ArchLinuxARM/* rootfs  # Copy root file system contents
+λ cp u-boot-sunxi-with-sp1.bin boot
+λ cp zImage boot
+λ cp <board>.dtb boot
+λ cp -a ArchLinuxARM/* rootfs  # Copy root file system contents
 ```
 6. Unmount the partitions
 ```
-sudo umount boot
-sudo umount rootfs
+λ sudo umount boot
+λ sudo umount rootfs
 ```
 7. Compress the image file
 ```
-xz -z -k -9 blackbeard-os-0.0.1-opi4-lts.img
+λ xz -z -k -9 blackbeard-os-0.0.1-opi4-lts.img
 ```
