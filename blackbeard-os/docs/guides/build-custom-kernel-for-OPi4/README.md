@@ -3,7 +3,7 @@
 ## The 'λ' is used as a prompt indicator
 
 # Step 1: Linaro ARM Cross-Compiler Installation
-### To download the latest release visit: https://releases.linaro.org/components/toolchain/binaries/, choose a release and download the tarball gcc-linaro--x86_64_arm-linux-gnueabihf.tar.xz or simply follow commands below to install 7.5-2019.12. This project uses 7.5-2019.12.
+To download the latest release visit: https://releases.linaro.org/components/toolchain/binaries/, choose a release and download the tarball gcc-linaro--x86_64_arm-linux-gnueabihf.tar.xz or simply follow commands below to install 7.5-2019.12. This project uses 7.5-2019.12.
 
 ## Download the Linaro ARM cross-compiler toolchain
 λ wget -c https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
