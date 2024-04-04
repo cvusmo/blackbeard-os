@@ -26,7 +26,7 @@
 λ set -x CROSS_COMPILE $PWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 ## Verify the installation
-- To verify that the cross-compiler toolchain is correctly installed, execute following command in terminal with FISH shell:
+- To verify that the cross-compiler toolchain is correctly installed, execute following command:
 ```λ $CROSS_COMPILE"gcc" --version```
 
 - The output should resemble:
