@@ -7,32 +7,30 @@
 - Option 2: simply follow commands below to install 7.5-2019.12. 
 ##### This project uses 7.5-2019.12.
 
-#### Download the Linaro ARM cross-compiler toolchain
+#### Download the TF-A ARM cross-compiler toolchain
 ```
-λ wget -c https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
-```
-
-#### Extract the downloaded tarball
-```
-λ tar -xJf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+λ git clone --depth 1 https://github.com/ARM-software/arm-trusted-firmware.git
 ```
 
-#### Check the path for CROSS_COMPILE
+#### Install aarch64-linux-gnu-gcc 
+```
+λ sudo pacman -S aarch64-linux-gnu-gcc
+```
+
+#### Build TF-A
+Specify the PLAT= with desired Rockchip platform to build TF-A
+```
+cd arm-trusted-firmware
+make realclean
+make CROSS_COMPILE=aarch64-linux-gnu- PLAT=rk3399
+cd ..
+```
+
+#### (OPTIONAL) Check the path for CROSS_COMPILE
 - Ensure the CROSS_COMPILE environment variable is correctly set. This variable specifies the prefix used for cross-compilation tools.
 - You can verify its path by running:
 ```
 λ echo $CROSS_COMPILE
-```
-
-#### Save the path to the extracted compiler binaries
-- Set the CROSS_COMPILE environment variable to point to the extracted compiler binaries: 
-```
-λ export CC=`pwd`/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
-```
-
-#### Set the CROSS_COMPILE Variable
-```
-λ set -x CROSS_COMPILE $PWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 ```
 
 #### Verify the installation
@@ -44,8 +42,8 @@
 
 - The output should resemble:
 ```
-arm-linux-gnueabihf-gcc (Linaro GCC 7.5-2019.12) 7.5.0
-Copyright (C) 2017 Free Software Foundation, Inc.
+aarch64-linux-gnu-gcc (GCC) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
