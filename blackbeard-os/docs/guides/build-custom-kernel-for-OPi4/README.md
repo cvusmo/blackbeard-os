@@ -62,7 +62,7 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 # Step 3: Build Linux Kernel
 - The process of building the Linux kernel involves compiling the kernel source code into executable binaries and modules that form the core of the operating system. By building the kernel, you customize its configuration, optimize performance, and incorporate necessary device drivers and features tailored to your system's requirements.
 
-- Download the source code from Linux Kernel Archives
+#### Download the source code from Linux Kernel Archives
 1. Visit https://www.kernel.org/ the official website for the Linux Kernel Archives.
 2. Navigate to the "Longterm" section. 
 3. Choose a version. This build guide uses 6.6.24 LTS (longterm)
@@ -70,10 +70,10 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 5. Extract the tarball
 ```λ tar -xvf linux-6.6.24.tar.xz```
 
-- Navigate to the Kernel Source Directory:
+#### Navigate to the Kernel Source Directory:
 ```λ cd linux-6.6.24/```
 
-- Configure the Kernel
+#### Configure the Kernel
 ```λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE sunxi_defconfig```
 
 - If the kernel configuration is correct, the following message should appear:
@@ -82,12 +82,12 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 # configuration written to .config
 #
 ```
-## Customize Kernel Configuration (Optional)
+#### Customize Kernel Configuration (Optional)
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE menuconfig
 
-## Build the Kernel Image and Modules
+#### Build the Kernel Image and Modules
 Example of <board>: 
 λ make -j$(nproc) ARCH=arm CROSS_COMPILE=$CROSS_COMPILE zImage modules <board>.dtb
 
-## Install Kernel Modules
+#### Install Kernel Modules
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE modules_install
