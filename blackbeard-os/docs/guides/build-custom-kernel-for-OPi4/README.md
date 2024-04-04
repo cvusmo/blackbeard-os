@@ -73,12 +73,8 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 #### Configure and build U-boot
 ```
 λ make ARCH=arm CROSS_COMPILE=$CC distclean
-```
-
-#### Replace <orangepi_model> with appropriate model name of your Orange Pi Board
-- Example: ofile:///home/blackbeard/Projects/Blackbeard-OS/blackbeard-os/blackbeard-os/docs/guides/build-custom-kernel-for-OPi4/ArchLinuxARMrangepi_4_lts_defconfig
-```
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
+λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE _defconfig
+λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE defconfig
 ```
 
 # Step 3: Build Linux Kernel
