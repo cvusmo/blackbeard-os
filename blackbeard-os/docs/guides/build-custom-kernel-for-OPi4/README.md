@@ -60,23 +60,23 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig 
 
 # Step 3: Build Linux Kernel
-The process of building the Linux kernel involves compiling the kernel source code into executable binaries and modules that form the core of the operating system. By building the kernel, you customize its configuration, optimize performance, and incorporate necessary device drivers and features tailored to your system's requirements.
+- The process of building the Linux kernel involves compiling the kernel source code into executable binaries and modules that form the core of the operating system. By building the kernel, you customize its configuration, optimize performance, and incorporate necessary device drivers and features tailored to your system's requirements.
 
-## Download the source code from Linux Kernel Archives
-### 1. Visit https://www.kernel.org/ the official website for the Linux Kernel Archives.
-### 2. Navigate to the "Longterm" section. 
-### 3. Choose a version. This build guide uses 6.6.24 LTS (longterm)
-### 4. Download the source code tarball (click [tarball])
-### 5. Extract the tarball
-λ tar -xvf linux-6.6.24.tar.xz
+- Download the source code from Linux Kernel Archives
+1. Visit https://www.kernel.org/ the official website for the Linux Kernel Archives.
+2. Navigate to the "Longterm" section. 
+3. Choose a version. This build guide uses 6.6.24 LTS (longterm)
+4. Download the source code tarball (click [tarball])
+5. Extract the tarball
+```λ tar -xvf linux-6.6.24.tar.xz```
 
-## Navigate to the Kernel Source Directory:
-λ cd linux-6.6.24/
+- Navigate to the Kernel Source Directory:
+```λ cd linux-6.6.24/```
 
-## Configure the Kernel
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE sunxi_defconfig
+- Configure the Kernel
+```λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE sunxi_defconfig```
 
-If the kernel configuration is correct, the following message should appear:
+- If the kernel configuration is correct, the following message should appear:
 ```
 #
 # configuration written to .config
