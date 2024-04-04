@@ -80,7 +80,6 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 ```
 λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
 ```
-```
 
 # Step 3: Build Linux Kernel
 - The process of building the Linux kernel involves compiling the kernel source code into executable binaries and modules that form the core of the operating system. By building the kernel, you customize its configuration, optimize performance, and incorporate necessary device drivers and features tailored to your system's requirements.
