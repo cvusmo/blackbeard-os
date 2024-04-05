@@ -65,17 +65,12 @@ A bootloader is a program that loads the Operating System kernel from secondary 
 ```
 - If v2024.04 is outdated, replace it with the latest version obtained from the previous command output
 
-#### Create 'tmp' branch
-```
-λ git checkout v2024.04 -b tmp
-```
-
 #### Configure and build U-boot
 Navigate to ~/u-boot/configs to search for <orangepi_model>_defconfig as of 20240404
 ```
-λ make ARCH=arm CROSS_COMPILE=$CC distclean
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE <orangepi_model>_defconfig
-λ make ARCH=arm CROSS_COMPILE=$CROSS_COMPILE
+λ export BL31=../arm-trusted-firmware/build/rk3399/release/bl31/bl31.elf
+λ make evb-rk3399_defconfig
+λ make CROSS_COMPILE=aarch64-linux-gnu-
 ```
 
 # Step 3: Build Linux Kernel
