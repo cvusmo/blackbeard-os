@@ -1,0 +1,3 @@
+#!/usr/bin/fish
+
+hyprctl monitors -j | jq -r '.[] select(.focused == true) | .name'
