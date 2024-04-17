@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+import subprocess
+import time
+from colour import Color
+
+gradient = [
+  "#c6a0f6",
+  "#b7bdf8",
+  "#8aadf4",
+] 
+
+def color_range(*args):
+  l = []
