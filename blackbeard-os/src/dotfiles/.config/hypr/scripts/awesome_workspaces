@@ -1,4 +1,4 @@
-# !/usr/bin/fish
+# !/usr/bin/bash
 
 monitors=($(hyprctl monitors -j | jq -r '.[].id'))
 
