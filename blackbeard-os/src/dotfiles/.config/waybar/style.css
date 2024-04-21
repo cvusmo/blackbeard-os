@@ -1,9 +1,9 @@
 * {
   border: none;
   font-family: 'Hurmit Nerd Font';
-  font-size: 12px; 
+  font-size: 12px;
   min-height: 15px;
-  color: #6ee6f4
+  color: #cad3f5; /* Using variable from colors.conf */
 }
 
 window#waybar {
@@ -12,8 +12,8 @@ window#waybar {
 
 #custom-power, #custom-arch, #workspaces {
   border-radius: 10px;
-  background-color: #11111b;
-  color: #cdd6f4;
+  background-color: #181926; /* Using variable */
+  color: #181926; /* Using variable */
   margin-top: 5px;
   margin-left: 5px;
   padding-top: 5px;
@@ -22,25 +22,25 @@ window#waybar {
 }
 
 #custom-power {
-  color: #f34f4f;
-  background-color: #11111b;
+  background-color: #181926;
+  color: #ed8796; /* Highlight color for power */
 }
 
 #custom-arch {
   font-size: 15px;
-  color: #cdd6f4;
-  background-color: #11111b;
+  background-color: #181926;
+  color: #cad3f5;
 }
 
 #workspaces button {
-  background: #11111b;
-  color: #cdd6f4;
+  background: #181926;
+  color: #cad3f5;
 }
 
 #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery {
   border-radius: 10px;
-  background-color: #11111b;
-  color: #cdd6f4;
+  background-color: #181926;
+  color: #cad3f5;
   margin-top: 5px;
   margin-right: 5px;
   padding-top: 3px;
@@ -49,8 +49,8 @@ window#waybar {
 }
 
 #custom-cava {
-  background-color: #11111b;
-  color: #cdd6f4;
+  background-color: #181926;
+  color: #cad3f5;
   border-radius: 10px;
   margin-top: 5px;
   margin-right: 5px;
@@ -62,11 +62,10 @@ window#waybar {
 
 #battery.charging,
 #battery.plugged {
-  background-color: #11111b;
-  color: #cdd6f4;
+  background-color: #181926;
+  color: #cad3f5;
 }
 
 #clock {
   margin-right: 0;
 }
-

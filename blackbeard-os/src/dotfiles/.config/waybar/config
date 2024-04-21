@@ -11,7 +11,7 @@
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
-      "on-click": "/home/echo/.config/wofi/wofi-command-script"
+      "on-click": "/home/echo/.config/wofi/scripts/wofi-waybarbutton.sh"
     },
     "hyprland/workspaces": {
       "format": "{icon}",
