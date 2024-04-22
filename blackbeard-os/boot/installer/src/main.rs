@@ -1,8 +1,8 @@
 // main.rs
 mod core;
-mod install_steps;
+mod config;
 
-use core::{install_config, installer};
+use core::{install_config, installer, run_networksetup};
 use std::process::Command;
 use std::io::{self, Write};
 
@@ -18,7 +18,11 @@ fn check_internet_connection() -> bool {
                 println!("Internet connection verified.");
                 true
             } else {
-                println!("No internet connection detected. Please connect to the internet before proceeding."); // if no internet connected -> goes to network.rs
+                println!("No internet connection detected. Please connect to the internet before proceeding.");
+                if let Err(e) = network::run_networksetup()
+                {
+                    println!("[NETWORKSETUP] Beginning networksetup");
+                }
                 false
             }
         },

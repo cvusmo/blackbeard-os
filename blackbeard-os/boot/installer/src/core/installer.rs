@@ -1,6 +1,7 @@
-// responsible for completion of installation steps and prompt for reboot if successul
+// Responsible for completion of installation steps and prompt for reboot if successul
 mod install_steps;
 
+#[cfg(feature = "safe-mode")]
 pub fn run_installation() {
     println!("Welcome to the installation!");
     println!("Do you want to start the installation? (yes/no)");
@@ -22,6 +23,7 @@ pub fn run_installation() {
     }
 }
 
+#[cfg(feature = "safe-mode")]
 fn main() {
     run_installation();
 }
