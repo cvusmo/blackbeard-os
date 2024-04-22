@@ -9,3 +9,8 @@ edition = "2021"
 #gtk4 = "0.5"
 #gdk4 = "0.5"
 #glib = "0.15"
+
+nix = "0.23.0"
+sys_mount = "0.5.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
