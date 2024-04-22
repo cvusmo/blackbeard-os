@@ -38,11 +38,11 @@ blackbeard-os/
 │
 ├── boot/
 │   ├── efi/         
-│   └── installer/            # installer to be run after boot process
-│   ├── kernel/             # Custom kernel source and build tools
-│   │   ├── patches/        # Kernel patches, if any
-│   │   └── configs/        # Kernel configuration files
-|   |
+│   └── installer/          # installer to be run after boot process
+│   └── kernel/             # Custom kernel source and build tools
+│       ├── patches/        # Kernel patches, if any
+│       └── configs/        # Kernel configuration files
+|
 ├── docs/                   # Documentation for the project, setup guides, etc.
 │   ├── guides/
 │   │   └── build-custom-kernel-for-OPi4/
