@@ -2,7 +2,23 @@
 use std::process::Command;
 use std::io;
 
-pub fn create_partition(disk: &str) -> io::Result<()> {
+// for development only
+[cfg(feature = "safe-mode")] 
+
+// enum to define all filesystems
+enum FileSystemType {
+    Ext4,
+    Btrfs,
+    Xfs,
+}
+
+pub fn create_partition(disk: &str, fs_type: FileSystemType) -> io::Result<()> {
+    let fs_type_str = match fs_type {
+        Ext4,
+        Btrfs,
+        Xfs,
+    }
+
     let status = Command::new("parted")
         .arg(disk)
         .arg("--script")
@@ -11,15 +27,24 @@ pub fn create_partition(disk: &str) -> io::Result<()> {
         .arg("gpt")
         .arg("mkpart")
         .arg("primary")
-        .arg("ext4")
+        .arg(fs_type)
         .arg("1MiB")
         .arg("100%")
         .status()?;
 
+    // to do: add more filesystems
     if status.success() {
-        Command::new("mkfs.ext4")
+        let format_cmd = format!("mkfs.{}", fs_type_str);
+        let format_status = Command::new(format_cmd)
             .arg(format!("{}1", disk))
             .status()?;
-    } else {
-        return Err(io::Error::new(io::ErrorKind::Other, "Failed to partition
 
+        if format_status.success() {
+            Ok(())
+        } else {
+            Err(io::Error::new(io::ErrorKind::Other, "Failed to format disk"))
+        }
+    } else {
+        Err(io::Error::new(io::ErrorKind::Other, "Failed to partition"))
+    }
+}

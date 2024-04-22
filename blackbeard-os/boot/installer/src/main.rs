@@ -8,7 +8,7 @@ use std::io::{self, Write};
 fn check_internet_connection() -> bool {
     println!("Checking internet connection...");
     let output = Command::new("ping")
-        .args(&["-c", "1", "8.8.8.8"]) // Google's DNS for connectivity check
+        .args(&["-c", "1", "1.1.1.1"]) // fuck google, lets use cloudfare
         .output();
     match output {
         Ok(output) => {
@@ -16,7 +16,7 @@ fn check_internet_connection() -> bool {
             if success {
                 println!("Internet connection verified.");
             } else {
-                println!("No internet connection detected. Please connect to the internet before proceeding.");
+                println!("No internet connection detected. Please connect to the internet before proceeding."); // if no internet connected -> goes to network.rs 
             }
             success
         },

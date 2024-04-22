@@ -25,14 +25,14 @@ pub fn run_install_steps() -> Result<(), String> {
         println!("Disk {} has been formatted.", disk_choice);
     }
 
-    input.clear();
+    input.clear()
     println!("Which desktop environment do you want to install? (Hyprland/XFCE)");
     io::stdin().read_line(&mut input).expect("Failed to read line");
 
     let de_choice = input.trim().to_uppercase();
 
-    let answers = InstallationAnswers::new(disk_choice, de_choice.clone());
-    if let Err(e) = answers.save_to_file("installation_answers.json") {
+    let answers = InstallConfig::new(disk_choice, de_choice.clone());
+    if let Err(e) = answers.save_to_file("installation.json") {
         return Err(format!("Failed to save installation answers: {}", e));
     }
 
