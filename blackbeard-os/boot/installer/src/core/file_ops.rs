@@ -1,4 +1,4 @@
-// copy filesystem and other file-based operations during install
+// Copy filesystem and other file-based operations during install
 use std::fs;
 use std::io;
 use std::path::Path;
