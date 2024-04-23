@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Function to install packages
+install_packages() {
+  sudo pacman -Sy --noconfirm acpi alacritty arch-audit archiso autoconf-archive base base-devel bc bless btrfs-progs cava cmake cpio dunst efibootmgr electron25-bin elfutils firefox fish fuse2 gimp git grim gst-libav gst-plugin-pipewire gtk-layer-shell gucharmap hypr-git hyprland-git hyprlang-git hyprpaper hyprpaper-git-debug intel-medi-driver intel-ucode iwd jq lazygit libpulse libva-intel-driver linux-firmware linux-hardened linux-zen lynis macbook-lighter materia-gtk-theme meson nasm neovim neovim-nvim-treesitter neovim-web-devicons-git network-manager-applet networkmanager noto-fonts-emoji nvim-treesitter-parsers-git obsidian p7zip pacman-contrib papirus-icon-theme pipewire pipewire-alsa pipewire-jack pipewire-pulse plymouth polkit-gnome pommed-light pommed-light-debug power-profiles-daemon pulsemixer qemu-base qpwgraph qt5-graphicaleffects qt5-multimedia qt5-quickcontrols qt5-virtualkeyboard qt5-wayland qt5ct rustup scdoc sddm setconf slurp smartmontools sway swaybg swayidle swaylock-git ttf-joypixels ttf-symbola ttf-twemoji ttf-twemoji-color unzip usbimager vesktop-bin vulkan-intel waybar wev wget wireless_tools wireplumber wofi xclip xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils xf86-video-intel xorg-server xorg-xinit yay yay-debug zip zram-generator
+}
+
 script_cmdline() {
     local param
     for param in $(</proc/cmdline); do
