@@ -2,7 +2,8 @@
 mod core;
 mod config;
 
-use core::{install_config, installer, run_networksetup};
+use core::{bootloader, disk, file_ops, network};
+use core::install::{installer, install_steps, install_config};
 use std::process::Command;
 use std::io::{self, Write};
 
@@ -56,9 +57,9 @@ fn main() {
     std::io::stdin().read_line(&mut input).expect("Failed to read line");
 
     if input.trim().eq_ignore_ascii_case("yes") {
-        let questions_with_choices = install_steps::get_installation_questions(); 
-        let mut choice_selections = Vec::new();
-
+        let disk = choice_selections[0].clone();
+        let desktop_environment = choice_selections[1].clone();
+    
         for (question, choices) in questions_with_choices {
             println!("{}", question);
             for (index, choice) in choices.iter().enumerate() {
@@ -72,10 +73,12 @@ fn main() {
             choice_selections.push(choices[choice_index].clone());
         }
         
-        install_config::save_answers(&choice_selections).expect("Failed to save answers");
+        // choice_selections creates an instance using data provided by the user
+        let config = InstallConfig::new(choice_selections.disk.clone(), choice_selections.desktopenvironment.clone());
+        config.save_to_file("path/to/file.json").expect("failed to save file");
 
         //bootloader installation
-        let bootloader_result = core::bootlaoder::install_systemd_boot(
+        let bootloader_result = core::bootloader::install_systemd_boot(
             "/path/to/esp",
             "blackbeard-os",
             "/boot/vmlinuz-linux-zen",

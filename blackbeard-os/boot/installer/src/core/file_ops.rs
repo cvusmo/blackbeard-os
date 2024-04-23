@@ -7,7 +7,7 @@ pub fn copy_files(src: &str, dest: &str) -> io::Result<()> {
     
     #[cfg(feature = "safe-mode")]
     {
-        println!("[SAFEMODE] Executing copy_files with src && dest: {}", src, dest);
+        println!("[SAFEMODE] Executing copy_files with src && dest: {}", src);
         return Ok(());
     }
 
