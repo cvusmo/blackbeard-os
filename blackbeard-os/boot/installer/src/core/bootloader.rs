@@ -7,7 +7,7 @@ pub fn install_systemd_boot(esp_path: &str, distro_name: &str) -> io::Result<()>
     
     #[cfg(feature = "safe-mode")]
     {
-        println!("[SAFEMODE] Executing install_systemd_boot with distro name: {}"
+        println!("[SAFEMODE] Executing install_systemd_boot with distro name: {}", distro_name);
         return Ok(());
     }
 
@@ -22,7 +22,7 @@ pub fn install_systemd_boot(esp_path: &str, distro_name: &str) -> io::Result<()>
         fs::copy("/usr/lib/systemd/boot/efi/systemd-bootx64.efi", systemd_boot_path.join("BOOTX64.EFI"))?;
 
         // Create loader entries, example configuration
-        let loader_conf = systemd_boot_path.join("loader/loader.conf)";
+        let loader_conf = systemd_boot_path.join("loader/loader.conf");
         let entry_conf = systemd_boot_path.join("loader/entries/arch.conf");
 
         // Write to loader.conf

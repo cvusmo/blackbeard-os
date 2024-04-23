@@ -25,18 +25,18 @@ impl InstallConfig {
 
     pub fn save_to_file(&self, file_path: &str) -> std::io::Result<()> {
         #[cfg(feature = "safe-mode")]
-        {
-            println!("[SAFEMODE] Saving InstallConfig to file: {}", file_path);
-            return Ok(());
-        }
+            {
+                println!("[SAFEMODE] Saving InstallConfig to file: {}", file_path);
+                return Ok(());
+            }
 
         #[cfg(not(feature = "safe-mode"))]
-        {
-            let file = File::create(file_path)?;
-            let writer = std::io::BufWriter::new(file);
-            serde_json::to_writer_pretty(writer, &self)?;
-            Ok(())
+            {
+                let file = File::create(file_path)?;
+                let writer = std::io::BufWriter::new(file);
+                serde_json::to_writer_pretty(writer, &self)?;
+                Ok(())
+            }
         }
     }
 }
-

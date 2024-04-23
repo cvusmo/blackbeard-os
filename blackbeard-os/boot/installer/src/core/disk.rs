@@ -11,9 +11,9 @@ enum FileSystemType {
 
 pub fn create_partition(disk: &str, fs_type: FileSystemType) -> io::Result<()> {
     let fs_type_str = match fs_type {
-        Ext4,
-        Btrfs,
-        Xfs,
+        FileSystemType::Ext4 => "ext4",
+        FileSystemType::Btrfs => "btrfs",
+        FileSystemType::Xfs => "xfs",
     };
 
     #[cfg(feature = "safe-mode")]

@@ -1,9 +1,8 @@
 // Responsible for installation steps
-mod install_config;
-mod disk;
-mod environment;
+//mod environment;
 
-use crate::install_config::InstallConfig;
+use super::install_config::InstallConfig;
+use super::disk;
 use std::io::{self, Write};
 
 pub fn run_install_steps() -> Result<()> {
@@ -31,7 +30,7 @@ pub fn run_install_steps() -> Result<()> {
         println!("Disk {} has been formatted.", disk_choice);
     }
 
-    input.clear()
+    input.clear();
     println!("Which desktop environment do you want to install? (Hyprland/XFCE)");
     io::stdin().read_line(&mut input)?;
 

@@ -72,7 +72,7 @@ fn main() {
             choice_selections.push(choices[choice_index].clone());
         }
         
-        install_config::save_answers(%choice_selections).expect("Failed to save answers");
+        install_config::save_answers(&choice_selections).expect("Failed to save answers");
 
         //bootloader installation
         let bootloader_result = core::bootlaoder::install_systemd_boot(
