@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-This file is part of Blackbeard-OS, a distro for ARM Arch Linux btw.
+This file is part of Blackbeard-OS, a distro for Arch Linux btw.
   
 ```bash
   Copyright (c) 2024 Nicholas Jordan <blacksheepcosmo@gmail.com>
@@ -37,18 +37,19 @@ This file is part of Blackbeard-OS, a distro for ARM Arch Linux btw.
 blackbeard-os/
 │
 ├── boot/
-│   ├── configs/            # Configuration files for boot loaders, kernels, etc.
-│   └── scripts/            # Scripts for boot process customization, if any
-│
+│   ├── efi/         
+│   └── installer/          # installer to be run after boot process
+│   └── kernel/             # Custom kernel source and build tools
+│       ├── patches/        # Kernel patches, if any
+│       └── configs/        # Kernel configuration files
+|
 ├── docs/                   # Documentation for the project, setup guides, etc.
 │   ├── guides/
 │   │   └── build-custom-kernel-for-OPi4/
 │   └── ascii/
 │
 ├── os/                     # All OS level customizations and source code
-│   ├── kernel/             # Custom kernel source and build tools
-│   │   ├── patches/        # Kernel patches, if any
-│   │   └── configs/        # Kernel configuration files
+|   |
 │   └── rootfs/             # Root filesystem modifications, overlays, etc.
 │       ├── etc/            # System-wide configuration files
 │       └── usr/            # Additional system binaries, libraries, etc.

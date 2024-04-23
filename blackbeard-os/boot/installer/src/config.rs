@@ -1,8 +1,4 @@
-pub mod bootloader;
-pub mod disk;
-pub mod file_ops;
-pub mod install_config;
-pub mod install_steps;
-pub mod installer;
-pub mod system_config;
+// Configuration constants/settings for installer
 
+pub const DEFAULT_TIMEOUT: u32 = 1000;
+pub const API_BASE_URL: &str = "https://cvusmo.tv/";
