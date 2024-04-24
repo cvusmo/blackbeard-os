@@ -3,8 +3,8 @@
 
 iso_name="blackbeard"
 iso_label="blackbeard_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Blackbeard <https://cvusmo.tv/>"
-iso_application="Blackbeard Live ISO"
+iso_publisher="Nick Jordan Blackbeard <https://github.com/cvusmo/blackbeard-os/>"
+iso_application="Blackbeard Live/Installation"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
