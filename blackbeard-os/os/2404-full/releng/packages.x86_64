@@ -54,7 +54,6 @@ libliftoff
 libx11
 libxcb
 libxcomposite
-libfixes
 libxkbcommon
 libxrender
 linux-firmware
@@ -62,6 +61,8 @@ linux-zen
 linux-zen-headers
 linuxconsole
 materia-gtk-theme
+mesa
+mesa-utils
 meson
 mkinitcpio
 mkinitcpio-archiso
@@ -99,6 +100,7 @@ qt5-quickcontrols
 qt5-virtualkeyboard
 qt5-wayland
 qt5ct
+qt6ct
 rustup
 scdoc
 sddm
@@ -107,6 +109,7 @@ setconf
 slurp
 smartmontools
 spectacle
+starship
 systemd
 systemd-libs
 systemd-sysvcompat
@@ -118,12 +121,16 @@ swayidle
 swaylock
 tar
 tomlplusplus
-ttf-dejavu
-ttf-fantasque-sans-mono
-ttf-fira-sans
+ttf-dejavu-nerd
+ttf-fantasque-nerd
+ttf-firacode-nerd
+ttf-go-nerd
+ttf-hack-nerd
 ttf-joypixels
 ttf-liberation
 ttf-opensans
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
 ugrep
 util-linux
 usbutils
@@ -140,6 +147,7 @@ wireless_tools
 wireplumber
 wlroots
 wofi
+xf86-input-libinput
 xcb-proto
 xcb-util
 xcb-util-errors
@@ -157,17 +165,3 @@ xorg-xwayland
 xz
 zip
 zram-generator
-
-## GPU Drivers
-x86-video-fbdev
-x86-video-vesa
-x86-video-intel
-x86-video-ati
-xf86-input-libinput
-mesa
-mesa-utils
-
-xf86-video-nouveau
-nvidia
-nvidia-utils
-nvidia-settings
