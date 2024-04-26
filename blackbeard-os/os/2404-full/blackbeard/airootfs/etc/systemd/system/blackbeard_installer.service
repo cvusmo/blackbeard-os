@@ -1,0 +1,12 @@
+[Unit]
+Description=CLI installer for blackbeard os
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/blackbeard_installer
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+# Custom hook to set fish as default shell
+# remove from airootfs!
+
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Configuring blackbeard-os
+When = PostTransaction
+Exec = /bin/sed -i 's#SHELL=.*#SHELL=/bin/fish#' /etc/default/useradd #set default shell to fish
+#	&& /etc/bin/yay -S --noconfirm yay # installs yay \
+#	&& /etc/bin/yay -S --noconfirm wlogout # installs wlogout

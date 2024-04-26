@@ -1,0 +1,52 @@
+/* Wofi Style Sheet */
+window {
+    background-color: #181926;
+    color: #cad3f5;
+    border: 5px solid #91d7e3;
+    opacity: 0.93;
+    border-radius: 20px;
+}
+
+/* focus highlight */
+#input:focus {
+  border-color: #91d7e3;
+  border: 2px solid #91d7e3;
+}
+
+/* wofi entries */
+#entry{
+  padding: 5px;
+  background-color: #181926;
+}
+
+/* Highlight color */
+#entry:selected, #entry:hover {
+ background-color: #5b6078;
+ color: #f4dbd6;
+}
+
+/* Scrollbar styling */
+scrollbar slider {
+  min-width: 4px;
+  background-color: #6e738d;
+}
+
+scrollbar slider:hover {
+  background-color: #91d7e3;
+}
+
+#entry:selected #text {
+  font-weight: bold;
+}
+
+/* Button styling for close, minimize, etc... */
+button {
+  background-color: #181926;
+  color: #cad3f5;
+}
+
+button:hover {
+  background-color: #91d7e3;
+  color: #91d7e3;
+}
+
