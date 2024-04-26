@@ -20,6 +20,7 @@ cpio
 dunst
 efibootmgr
 elfutils
+fd
 filesystem
 findutils
 firefox
@@ -102,6 +103,7 @@ qt5-virtualkeyboard
 qt5-wayland
 qt5ct
 qt6ct
+ripgrep
 rustup
 scdoc
 sddm
