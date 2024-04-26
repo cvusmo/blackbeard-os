@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=blackbeard os hypr
-Comment=A tiling window manager written in modern C++
-Exec=hyprland
-Type=Application
-Keywords=tiling;wm;window;manager;Hypr;
