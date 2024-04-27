@@ -3,7 +3,7 @@
   font-family: 'Hurmit Nerd Font';
   font-size: 12px;
   min-height: 15px;
-  color: #cad3f5; /* Using variable from colors.conf */
+  color: #d3c6aa; /* Using variable from colors.conf */
 }
 
 window#waybar {
@@ -12,8 +12,8 @@ window#waybar {
 
 #custom-arch, #workspaces {
   border-radius: 10px;
-  background-color: #181926; /* Using variable */
-  color: #181926; /* Using variable */
+  background-color: #2b3339; /* Using variable */
+  color: #2b3339; /* Using variable */
   margin-top: 5px;
   margin-left: 5px;
   padding-top: 5px;
@@ -24,8 +24,8 @@ window#waybar {
 
 #custom-power {
   border-radius: 10px;
-  background-color: #181926;
-  color: #ed8796; /* Highlight color for power */
+  background-color: #2b3339;
+  color: #e67e80; /* Highlight color for power */
   margin-top: 5px;
   margin-right: 5px;
   padding-top: 3px;
@@ -36,8 +36,8 @@ window#waybar {
 
 #custom-arch {
   font-size: 15px;
-  background-color: #181926;
-  color: #cad3f5;
+  background-color: #2b3339;
+  color: #d3c6aa;
 }
 
 #workspaces button {
@@ -55,12 +55,6 @@ window#waybar {
   padding-left: 3px;
   padding-right: 3px;
   opacity: 0.93;
-}
-
-#battery.charging,
-#battery.plugged {
-  background-color: #181926;
-  color: #cad3f5;
 }
 
 #clock {
