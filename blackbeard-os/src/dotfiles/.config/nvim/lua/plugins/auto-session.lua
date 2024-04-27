@@ -1,9 +1,9 @@
 return {
     "rmagatti/auto-session",
-    lazy = true,
+    lazy = false,
     keys = {
         {
-            "<leader>fS",
+            --"<leader>fS",
             function()
                 require("auto-session.session-lens").search_session()
             end,

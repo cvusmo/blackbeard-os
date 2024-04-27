@@ -19,6 +19,7 @@ return {
   {
     'nvim-telescope/telescope-ui-select.nvim',
     config = function()
+      require("telescope").load_extension("noice")
       require("telescope").setup ({
         extensions = {
         fzf = {
