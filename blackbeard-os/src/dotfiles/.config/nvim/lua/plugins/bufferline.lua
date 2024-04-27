@@ -14,7 +14,7 @@ return {
             offsets = {
                 {
                     filetype = "neo-tree",
-                    text = "Explorer",
+                    text = "lost treasure",
                     text_align = "center",
                 },
             },

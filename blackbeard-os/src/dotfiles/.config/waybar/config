@@ -1,8 +1,8 @@
 {
   "layer": "top",
     "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["backlight", "custom/cava", "pulseaudio", "network", "battery", "custom/power"],
+    "modules-center": ["clock", "custom/music"],
+    "modules-right": ["backlight", "custom/cava", "pulseaudio", "network", "battery", "custom/power", "custom/notifications"],
     "custom/power": {
       "format": " 󰐦 ",
       "tooltip": "logs you out",
@@ -22,6 +22,26 @@
         "default": ""
       }
     }, 
+    "custom/notifications": {
+      "tooltip": false,
+      "format": "{} {icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": "",
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "sleep 0.1 && swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true,
+    },
     "clock": {
       "format": "{:%H:%M}  ",
       "format-alt": "{:%A, %B %d, %Y (%R)}  ",
@@ -46,7 +66,21 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
       }
-    },    
+    },
+    "custom/music": {
+      "format": "{icon} {}",
+      "return-type": "json",
+      "max-length": 100,
+      "format-icons": {
+        "spotify": " ",
+        "default": " ",
+      },
+      "escape": true,
+      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+      "on-click": "playerctl --player=spotify play-pause",
+      "on-scroll-up": "playerctl --player=spotify next",
+      "on-scroll-down": "playerctl --player=spotify previous",
+    },
     "backlight": {
       "device": "intel_backlight",
       "format": "<span color='#b4befe'>{icon}</span> {percent}%",
