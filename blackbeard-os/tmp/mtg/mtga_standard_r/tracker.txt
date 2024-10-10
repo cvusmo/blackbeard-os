@@ -1,0 +1,452 @@
+Ranked W/L: 171/171 (50.00%)
+
+Total Hours: 120.5 hours
+
+Game 1: 1L vs mono-green, mana screwed, Plat T4 4/6 -> 3/6
+Game 2: 1W vs Selesnya, toxic deck, Plat T4 3/6 -> 4/6
+Game 3: 1L vs all colors, laughing jasper flint, conceded due to jasper flint, Plat T4 4/6 -> 3/6
+Game 4: 1W vs Orzhov, smooth win, Plat T4 3/6 -> 4/6
+Game 5: 1L vs Boros, not enough blockers took too much damage early and didn't deliver enough damage, Plat T4 4/6 -> 3/6
+Game 6: 1W vs Orzhov, player is playing an enchantment deck, Plat T4 3/6 -> 4/6
+Game 7: 1W vs Azorius, player targeted lunar convoction instead of eliminating the lifelinks, Plat T4 4/6 -> 5/6
+Game 8: 1W vs Golgari, playing from their graveyard, all colors, Plat T4 5/6 -> Plat T3 1/6
+Game 9: 1L vs Simic, Plat T3 1/6 -> Plat T4 5/6
+Game 10: 1W vs Izzet, Plat T4 5/6 -> Plat T3 1/6
+
+Games 1 to 10: 6-4 (60% win ratio)
+
+Game 11: 1W vs Boros, Plat T3 1/6 -> Plat T3 2/6
+Game 12: 1L vs Esper, Plat T3 2/6 -> Plat T3 1/6
+Game 13: 1W vs Gruul, Plat T3 1/6 -> Plat T3 2/6
+Game 14: 1L vs Selesnya, Plat T3 2/6 -> Plat T3 1/6
+Game 15: 1L vs Dimir, very aggro deck, two creatures in 4 rounds, starting hand had 0 creatures, both creatures were 4 mana, Plat T3 1/6 -> Plat T3 1/6
+Game 16: 1L vs Dimir, 1 creature starting hand (4 mana), Plat T3 1/6 -> Plat T4 5/6
+Game 17: 1W vs mono-red, Plat T4 5/6 -> Plat T3 1/6
+Game 18: 1L vs Azorius, no blockers, Plat T3 1/6 -> Plat T4 5/6
+Game 19: 1W vs Azorius, starting hand 3 creatures, 3 lands, 1 enchantment, opponent is just using counter spells, Plat T4 5/6 -> Plat T3 1/6
+Game 20: 1W vs Boros, Plat T3 1/6 -> Plat T3 2/6
+
+Game 11 to 20: 5-5 (50% win ratio)
+
+Game 21: 1W vs Boros, deck played just like it was built, Plat T3 2/6 -> Plat T3 3/6
+Game 22: 1W vs Azorius, deck played just like it was built, Plat T3 3/6 -> Plat T3 4/6
+Game 23: 1L vs Rakdos, evenly matched, had no blockers, Plat T3 4/6 -> Plat T3 3/6
+Game 24: 1W vs Selesnya, deck played just like it was built, Plat T3 3/6 -> Plat T3 4/6
+Game 25: 1L vs Rakdos, deck did not perform, Plat T3 4/6 -> Plat T3 3/6
+Game 26: 1W vs Boros, deck played just like it was built, Plat T3 3/6 -> Plat T3 4/6
+Game 27: 1L vs Gruul, dragon deck, i drew lands only, Plat T3 4/6 -> Plat T3 3/6
+Game 28: 1L vs Izzet, no blockers, Plat T3 3/6 -> Plat T3 2/6
+Game 29: 1L vs Boros, opponent had strong starting hand with 4 beasts in play for 5/5 each... lethal damage on round 4, Plat T3 2/6 -> Plat T3 1/6
+Game 30: 1L vs mono-black, all lands in opening hand, Plat T3 1/6 -> Plat T3 1/6
+
+Game 21 to 30: 4-6 (40% win ratio)
+
+Game 31: 1L vs Boros, opponent stacked counters in one round tripling their count. if was a 2/2 it became a 6/6, Plat T3 1/6 -> Plat T4 5/6
+Game 32: 1W vs Sultai, Plat T4 5/6 -> Plat T3 1/6
+Game 33: 1W vs Orzhov, dominated as i had good cards, prevented being milled, and contained shelored, Plat T3 1/6 -> Plat T3 1/6
+Game 34: 1W vs Selesnya, won with scoured barrens by havine the starscape bats deal 2 dmg, Plat T3 1/6 -> Plat T3 2/6
+Game 35: 1W vs mono-white, dominated, Plat T3 2/6 -> Plat T3 3/6
+Game 36: 1W vs Selesnya, opponent gave up, Plat T3 3/6 -> Plat T3 4/6
+Game 37: 1L vs Selesnya, close game 4 hp to 5 hp, Plat T3 4/6 -> Plat T3 3/6
+Game 38: 1L vs Bant, no creatures, Plat T3 3/6 -> Plat T3 2/6
+Game 39: 1W vs Selesnya, mana screwed still won, Plat T3 2/6 -> Plat T3 3/6
+Game 40: 1W vs Gruul, smooth victory, Plat T3 3/6 -> Plat T3 4/6
+
+Game 31 to 40: 7-3 (70% win ratio)
+
+Game 41: 1L vs Gruul, mana screwed Plat T3 4/6 -> Plat T3 3/6
+Game 42: 1W vs Simic, easy win, Plat T3 3/6 -> Plat T3 4/6
+Game 43: 1W vs mono-black, player gave up, Plat T3 4/6 -> Plat T3 5/6
+Game 44: 1L vs Golgari, close game needed to do 1 more damage to win, Plat T3 5/6 -> Plat T3 4/6
+Game 45: 1W vs mono-black, smooth win, Plat T3 4/6 -> Plat T3 5/6
+Game 46: 1L vs mono-black, perfectly countered with destroy creature spells, not enough mana to get a board presence, Plat T3 5/6 -> Plat T3 4/6
+Game 47: 1W vs Simic, smooth win, Plat T3 4/6 -> Plat T3 5/6
+Game 48: 1W vs mono-black, smooth win, Plat T3 5/6 -> Plat T2 1/6
+Game 49: 1W vs Azorius, smooth win, Plat T2 1/6 -> Plat T2 1/6
+Game 50: 1W vs Simic, close win, Plat T2 1/6 -> Plat T2 2/6 
+
+Game 41 to 50: 7-3 (70% win ratio)
+
+Game 51: 1W vs Dimir, mill deck couldn't mill me fast enough, Plat T2 2/6 -> Plat T2 3/6
+Game 52: 1W vs Golgari, smooth win, Plat T2 3/6 -> Plat T2 4/6
+Game 53: 1L vs Dimir, lots of counter spells, too much mana no creatures, nothing i could do, Plat T2 4/6 -> Plat T2 3/6
+Game 54: 1W vs mono-red, weird win, Plat T2 3/6 -> Plat T2 4/6
+Game 55: 1W vs mono-green, opponent conceded, Plat T2 4/6 -> Plat T2 5/6
+Game 56: 1W vs Rakdos, close game, Plat T2 5/6 -> Plat T1 1/6
+Game 57: 1L vs Orzhov, mana flooded, drew 5 lands in first 5 rounds, Plat T1 1/6 -> Plat T2 5/6
+Game 58: 1W vs Simic, smooth win, Plat T2 5/6 -> Plat T1 1/6
+Game 59: 1W vs mono-black, smooth win, Plat T1 1/6 -> Plat T1 2/6
+Game 60: 1L vs Azorius, no creatures and land flooded, Plat T1 2/6 -> Plat T1 1/6
+
+Game 51 to 60: 7-3 (70% win ratio)
+
+Game 61: 1L vs Orzhov, black destroy spell deck with poison close game but didn't get enough damage fast enough, Plat T1 1/6 -> Plat T2 5/6
+Game 62: 1W vs Orzhov, opponent conceded, Plat T2 5/6 -> Plat T1 1/6
+Game 63: 1L vs Orzhov, close game evenly matched, Plat T1 1/6 -> Plat T1 1/6
+Game 64: 1L vs Dimir, mana screwed, Plat T1 1/6 -> Plat T2 5/6
+Game 65: 1L vs Orzhov, mana screwed, opponent had 2x enchantment and 2x destroy creatures in opening hand, i needed 4 mana and only had 3, Plat T2 5/6 -> Plat T2 4/6
+Game 66: 1W vs Gruul, smooth win, Plat T2 4/6 -> Plat T2 5/6
+Game 67: 1W vs Orzhov, smooth win, Plat T2 5/6 -> Plat T1 1/6
+Game 68: 1L vs mono-blue, Plat T1 1/6 -> Plat T1 1/6
+Game 69: 1L vs mono-black, all opponent did was play destroy cards to remove my creatures, their opening hand was 5 destroy cards, Plat T1 1/6 -> Plat T1 1/6
+Game 70: 1L vs Dimir, no creatures, mana screwed, Plat T1 1/6 -> Plat T1 1/6
+
+Game 61 to 70: 3-7 (30% win ratio)
+
+Game 71: 1L vs mono-white, mana flooded, conceded, Plat T1 1/6 -> Plat T2 5/6
+Game 72: 1W vs Izzet, smooth win, Plat T2 5/6 -> Plat T1 1/6
+Game 73: 1L vs Rakdos, mana flooded, Plat T1 1/6 -> Plat T1 1/6
+Game 74: 1W vs Dimir, opponent conceded, Plat T1 1/6 -> Plat T1 1/6
+Game 75: 1W vs Golgari, smooth win, Plat T1 1/6 -> Plat T1 2/6
+Game 76: 1L vs Simic, mana screwed, Plat T1 2/6 -> Plat T1 1/6
+Game 77: 1W vs Golgari, smooth win, Plat T1 1/6 -> Plat T1 2/6
+Game 78: 1W vs all colors, opponent conceded, Plat T1 2/6 -> Plat T1 3/6
+Game 79: 1L vs Orzhov, good game, Plat T1 3/6 -> Plat T1 2/6
+Game 80: 1L vs Gruul, no blockers, no counters, Plat T1 2/6 -> Plat T1 1/6
+
+Game 71 to 80: 4-6 (40% win ratio)
+
+Game 81: 1W vs Simic, close match, Plat T1 1/6 -> Plat T1 2/6
+Game 82: 1L vs Dimir, poison deck, Plat T1 2/6 -> Plat T1 1/6
+Game 83: 1W vs mono-green, close win, Plat T1 1/6 -> Plat T1 2/6
+Game 84: 1W vs Gruul, close win, Plat T1 2/6 -> Plat T1 3/6
+Game 85: 1W vs Gruul, close win, Plat T1 3/6 -> Plat T1 4/6
+Game 86: 1L vs Simic, mana screwed, mockingbird copied deep cavern bat, Plat T1 4/6 -> Plat T1 3/6
+Game 87: 1L vs Gruul, mana screwed, Plat T1 3/6 -> Plat T1 2/6
+Game 88: 1L vs Simic, mana screwed, Plat T1 2/6 -> Plat T1 1/6
+Game 89: 1W vs Selesnya, opponent conceded, Plat T1 1/6 -> Plat T1 2/6
+Game 90: 1W vs Golgari, opponent was mana screwed, Plat T1 2/6 -> Plat T1 3/6
+
+Game 81 to 90: 6-4 (60% win ratio)
+
+Game 91: 1L vs Jeskai, mana screwed, Plat T1 3/6 -> Plat T1 2/6
+Game 92: 1L vs Boros, poisoned to death, mana screwed, Plat T1 2/6 -> Plat T1 1/6
+Game 93: 1L vs Gruul, dragons nothing i could do, Plat T1 1/6 -> Plat T1 1/6
+Game 94: 1L vs mono-white, mana screwed, Plat T1 1/6 -> Plat T2 5/6
+Game 95: 1W vs Jund, had overpowered opening deck, all 4 of my cavern bats, Plat T2 5/6 -> Plat T1 1/6
+Game 96: 1W vs Dimir, close game, Plat T1 1/6 -> Plat T1 1/6
+Game 97: 1L vs Izzet, counter spelled into oblivion and dino's, Plat T1 1/6 -> Plat T1 1/6
+Game 98: 1L vs Rakdos, close match, Plat T1 1/6 -> Plat 2 5/6
+Game 99: 1W vs Rakdos, weird match, Plat T2 5/6 -> Plat T1 1/6
+Game 100: 1L vs all colors, mill deck that i held my own even though they milled me down to 10 cards, Plat T1 1/6 -> Plat T1 1/6
+
+Game 91 to 100: 3-7 (30% win ratio)
+
+Game 101: 1W vs Jund, smooth win, Plat T1 1/6 -> Plat T1 1/6 
+Game 102: 1L vs Orzhov, mana screwed, close game, Plat T1 1/6 -> Plat T2 5/6
+Game 103: 1L vs all colors, mana screwed, Plat T2 5/6 -> Plat T2 5/6
+Game 104: 1W vs Izzet, troll deck that just used counters, Plat T2 5/6 -> Plat T1 1/6
+Game 105: 1W vs mono-white, Plat T1 1/6 -> Plat T1 1/6
+Game 106: 1W vs Azorius, Plat T1 1/6 -> Plat T1 2/6
+Game 107: 1L vs mono-black, mana screwed, Plat T1 2/6 -> Plat T1 1/6
+Game 108: 1L vs mono-black, mana screwed, Plat T1 1/6 -> Plat T1 1/6
+Game 109: 1L vs mono-white, mana screwed, Plat T1 1/6 -> Plat T2 5/6
+Game 110: 1W vs mono-black, smooth win, Plat T2 5/6 -> Plat T1 1/6
+
+Game 101 to 110: 5-5 (50% win ratio)
+
+Game 111: 1W vs Simic, smooth win, Plat T1 1/6 -> Plat T1 1/6
+Game 112: 1L vs mono-blue, mana screwed, countered with stun spells, Plat T1
+Game 113: 1L vs Golgari, mana screwed, Plat T1
+Game 114: 1W vs Boros, Plat T1 -> Plat T1 1/6
+Game 115: 1W vs mono-black, player conceded, Plat T1 1/6 -> Plat T1 2/6
+Game 116: 1L vs Grixis, mana screwed, Plat T1 2/6 -> Plat T1 1/6
+Game 117: 1L vs Azorius, mana flooded, board wiped, no creatures, Plat T1,
+Game 118: 1L vs Boros, aggro deck did 17 damage on round 2, Plat T1 -> Plat T2 5/6
+Game 119: 1L vs Orzhov, mana flooded, no creatures, Plat T2 5/6 -> PLat T2 4/6
+Game 120: 1L vs Azorius, round 4 player had 4 creatures that were 11/11, Plat T2 4/6 -> Plat T2 3/6
+
+Game 111 to 120: 3-7 (30% win ratio)
+
+Game 121: 1W vs Selesnya, opponent was mana flooded, Plat T2 3/6 -> Plat T2 4/6
+Game 122: 1L vs Azorius, poison deck, mana flooded, NO CREATURES, Plat T2 4/6 -> Plat T2 3/6
+Game 123: 1W vs Jund, smooth win, Plat T2 3/6 -> Plat T2 4/6
+Game 124: 1L vs Orzhov, mana screwed, Plat T2 4/6 -> Plat T2 3/6
+Game 125: 1W vs Orzhov, dominated, Plat T2 3/6 -> Plat T2 4/6
+Game 126: 1W vs Boros, mana screwed, close game, pulled off a w with defense, Plat T2 4/6 -> Plat T2 5/6
+Game 127: 1L vs Gruul, couldnt stop the attack, Plat T2 5/6 -> Plat T2 4/6 
+Game 128: 1L vs Azorius, didnt' defend well, Plat T2 4/6 -> Plat T2 3/6
+Game 129: 1L vs Jund, had no creatures, Plat T2 3/6 -> Plat T2 2/6
+Game 130: 1W vs mono-black, smooth win, played hand well, close game, Plat T2 2/6 -> Plat T2 3/6
+
+Game 121 to 130: 5-5 (50% win ratio)
+
+Game 131: 1L vs Gruul, mana screwed, opponent playing aggro deck, had 3 mana in 6 rounds, Plat T2 3/6 -> Plat T2 2/6
+Game 132: 1L vs mono-white, picked a swamp instead of a plains, mana screwed, Plat T2 2/6 -> Plat T2 1/6
+Game 133: 1L vs Azorius, mana screwed, playing defense decently, had 3 mana in 8 rounds, Plat T2 
+Game 134: 1W vs Simic, played my hand well, Plat T2 -> Plat T2 1/6
+Game 135: 1W vs Orzhov, played hand well, Plat T2 1/6 -> Plat T2 2/6
+Game 136: 1W vs Bant, mill deck not sure why they're milling?, weird win Plat T2 2/6 -> Plat T2 3/6
+Game 137: 1W vs Boros, opponent conceded, Plat T2 3/6 -> Plat T2 4/6
+Game 138: 1W vs Golgari, mana screwed, smooth win, deck played well, Plat T2 4/6 -> Plat T2 5/6
+Game 139: 1L vs Orzhov, i played poorly, Plat T2 5/6 -> Plat T2 4/6
+Game 140: 1W vs Boros, deck played well, Plat T2 4/6 -> Plat T2 5/6
+
+Game 131 to 140: 6-4 (60% win ratio)
+
+Game 141: 1L vs mono-white, no chance at winning, Plat T2 5/6 -> Plat T2 4/6
+Game 142: 1W vs mono-white, very close game, Plat T2 4/6 -> Plat T2 5/6
+Game 143: 1W vs Boros, smooth game, Plat T2 5/6 -> Plat T1
+Game 144: 1W vs Selesnya, opponent wasted time and then finally conceded, Plat T1 -> Plat T1 1/6
+Game 145: 1W vs Simic, close game, Plat T1 1/6 -> Plat T1 2/6
+Game 146: 1W vs Izzet, very close game, Plat T1 2/6 -> Plat T1 3/6
+Game 147: 1L vs Orzhov, close game, didnt' have creatures, sunfalled twice, Plat T1 3/6 -> Plat T1 2/6
+Game 148: 1L vs Bant, didn't block enough relied on lifelink to keep me alive, Plat T1 2/6 -> Plat T1 1/6
+Game 149: 1W vs Golgari, perfect hand, Plat T1 1/6 -> Plat T1 2/6
+Game 150: 1W vs mono-black, close match, Plat T1 2/6 -> Plat T1 3/6
+
+Game 141 to 150: 7-3 (70% win ratio)
+
+Game 151: 1W vs all colors, close game, Plat T1 3/6 -> Plat T1 4/6
+Game 152: 1W vs Orzhov, very similar deck, Plat T1 4/6 -> Plat T1 5/6
+Game 153: 1W vs Dimir, very close game, Plat T1 5/6 -> Diamond T4
+Game 154: 1W vs mono-red, opponent conceded, Diamond T4 -> Diamond T4 1/6 
+Game 155: 1L vs Orzhov,
+Game 156: 1W vs Orzhov,
+Game 157: 1W vs Rakdos,
+Game 158: 1W vs Rakdos,
+Game 159: 1W vs Azorius,
+Game 160: 1W vs Golgari,
+
+Game 151 to 160: 9-1 (90% win ratio)
+
+Game 161: 1L vs Simic, close game, Diamond T4 5/6 -> Diamond T4 4/6
+Game 162: 1L vs Selesnya, no blockers, Diamond T4 4/6 -> Diamond T4 3/6
+Game 163: 1L vs Simic, poison deck, turn 3 had 2 poison counters, decent defense, Diamond T4 3/6 -> Diamond T4 2/6
+Game 164: 1W vs mono-white, opponent conceded, Diamond T4 2/6 -> Diamond T4 3/6
+Game 165: 1L vs Selesnya, close game, Diamond T4 3/6 -> Diamond T4 2/6 
+Game 166: 1L vs Orzhov, had no creatures, Diamond T4 2/6 -> Diamond T4 1/6
+Game 167: 1W vs Boros, close game, Diamond T4 1/6 -> Diamond T4 2/6
+Game 168: 1W vs Golgari, smooth win, Diamond T4 2/6 -> Diamond T4 3/6 
+Game 169: 1L vs Rakdos, close game, Diamond T4 3/6 -> Diamond T4 2/6 
+Game 170: 1L vs all colors, mana screwed, Diamond T4 2/6 -> Diamond T4 1/6
+
+Game 161 to 170: 3-7 (30% win ratio)
+
+Game 171: 1L vs mono-black, grievous wound counters my tactic, Diamond T4 1/6 -> Diamond T4 
+Game 172: 1L vs Naya, mana screwed, Diamond T4
+Game 173: 1W vs Selesnya, close game, Diamond T4 -> Diamond T4 1/6
+Game 174: 1L vs Orzhov, mana screwed, Diamond T4 1/6 -> Diamond T4
+Game 175: 1L vs Witch, mana screwed, Diamond T4   
+Game 176: 1L vs Simic, close game, Diamond T4 
+Game 177: 1L vs mono-red, mana screwed, aggro, Diamond T4
+Game 178: 1L vs Golgari, mana screwed, Diamond T4 
+Game 179: 1W vs Jeskai, mana screwed, close game, Diamond T4 -> Diamond T4 1/6
+Game 180: 1W vs Selesnya, close game, Diamond T4 1/6 -> Diamond T4 2/6
+
+Game 171 to 180: 4-6 (40% win ratio)
+
+Game 181: 1L vs Orzhov, close game got them down to 0 hp but they healed for 1 hp and came back, Diamond T4 2/6 -> Diamond T4 1/6
+Game 182: 1W vs Golgari, poison deck, liliana came in clutch, Diamond T4 1/6 -> Diamond T4 2/6
+Game 183: 1L vs mono-white, Optimistic Scavenger, next time kill the creature not the enchantment, Diamond T4 2/6 -> Diamond T4 1/6
+Game 184: 1L vs mono-black, mana screwed, Diamond T4 1/6 -> Diamond T4
+Game 185: 1W vs Gruul, easy game, Diamond T4 -> Diamond T4 1/6 
+Game 186: 1W vs Rakdos, easy w, Diamond T4 1/6 -> Diamond T4 2/6
+Game 187: 1L vs mono-red, Cacophony Scamp turn 1 insta dead, Diamond T4 2/6 -> Diamond T4 1/6
+Game 188: 1W vs Jund, close game, Diamond T4 1/6 -> Diamond T4 2/6
+Game 189: 1L vs Golgari, need exile only not destroy, Diamond T4 2/6 -> Diamond T4 1/6 
+Game 190: 1W vs Naya, deck played well, Diamond T4 1/6 -> Diamond T4 2/6
+
+Game 181 to 190: 5-5 (50% win ratio)
+
+Game 191: 1L vs Orzhov, mana flooded, kept drawing lands and not creatures, Diamond T4 2/6 -> Diamond T4 1/6
+Game 192: 1W vs mono-white, smooth win, Diamond T4 1/6 -> Diamond T4 2/6 
+Game 193: 1L vs Orzhov, close game, Diamond T4 2/6 -> Diamond T4 1/6
+Game 194: 1W vs Simic, frog deck, blink deck with splash portal, not on my watch took care of Mistbreath Elder, Diamond T4 1/6 -> Diamond T4 2/6
+Game 195: 1L vs Rakdos, close game, Diamond T4 2/6 -> Diamond T4 1/6
+Game 196: 1W vs Gruul, close game, opponent was mana screwed, Diamond T4 1/6 -> Diamond T4 2/6
+Game 197: 1L vs mono-green, blocked with all i had but couldnt do damage, had no counters, Diamond T4 2/6 -> Diamond T4 1/6
+Game 198: 1L vs mono-white, close game, Diamond T4
+Game 199: 1L vs Golgari, boring game, player didn't attack and waited for Vraska's Betryal Sting to proc, Diamond T4
+Game 200: 1W vs Mardu, opponent conceded, Diamond T4 -> Diamond T4 1/6 
+
+Game 191 to 200: 4-6 (40% win ratio)
+
+Game 201: 1W vs mono-blue, destroyed enchantment which had them win if they unlock 8 rooms, Diamond T4 1/6 -> Diamond T4 2/6 [22 to 18]
+Game 202: 1L vs mono-black, grievous wound prevents my creatures triggering, Diamond T4 2/6 -> Diamond T4 1/6 [8 to 20]
+Game 203: 1L vs Golgari, destroyed every creature I casted, Diamond T4 [0 to 30]  
+Game 204: 1L vs Temur, mana screwed, Diamond T4 [0 to 22] 
+Game 205: 1L vs Boros, no creatures, no cards, Diamond T4 [-12 to 20]  
+Game 206: 1L vs Mardu, made a dumb play and lost, Diamond T4 [0 to 20] 
+Game 207: 1L vs Golgari, mana screwed, Diamond T4 [0 to 20]
+Game 208: 1L vs Izzet, mana screwed, Diamond T4 [-2 to 17] 
+Game 209: 1W vs Gruul, close game, Diamond T4 -> Diamond T4 1/6 [3 to -4]
+Game 210: 1L vs Orzhov, poison deck, Diamond T4 [-8 to 9] 
+
+Game 201 to 210: 2-8 (20% win ratio)
+
+Game 211: 1W vs Selesnya, smooth win, Diamond T4 -> Diamond T4 1/6 [30 to 0]
+Game 212: 1W vs Esper, opponent conceded, Diamond T4 1/6 -> Diamond T4 2/6 [20 to 20]
+Game 213: 1L vs mono-white, opponent destroyed all my creatures, Diamond T4 2/6 -> Diamond T4 1/6 [20 to -2]
+Game 214: 1W vs Boros, close game, Diamond T4 1/6 -> Diamond T4 2/6 [28 to 0] 
+Game 215: 1L vs Selesnya, destroyed every creature i had, -> Diamond T4 2/6 -> Diamond T4 1/6 [0 to 21]
+Game 216: 1W vs Gruul, close game, Diamond T4 1/6 -> Diamond T4 2/6 [14 to 0]
+Game 217: 1W vs mono-black, Diamond T4 2/6 -> Diamond T4 3/6, [28 to 0]
+Game 218: 1L vs Gruul, every spell i cast was exiled or destroyed, Diamond T4 3/6 -> Diamond T4 2/6 [-1 to 20]
+Game 219: 1L vs Temur, Diamond T4 2/6 -> Diamond T4 1/6
+Game 220: 1L vs Abzan, Diamond T4 1/6 -> Diamond T4
+
+Game 211 to 220: 5-5 (50% win ratio)
+
+Game 221: 1W vs Boros, close game, Diamond T4 -> Diamond T4 1/6 [18 to 0] 
+Game 222: 1L vs Esper, mana screwed, Diamond T4 1/6 -> Diamond T4 [0 to 54]
+Game 223: 1L vs Bant, mana screwed, unwinnable match, Diamond T4 [-15 to 42]
+Game 224: 1L vs mono-black, every creature destroyed, every card discarded, unwinnable, Diamond T4 [0 to 32]
+Game 225: 1W vs all colors, close game, Diamond T4 -> Diamond T4 1/6 [28 to 0] 
+Game 226: 1W vs mono-green, smooth win, Diamond T4 1/6 -> Diamond T4 2/6 [30 to 0]
+Game 227: 1L vs Temur, Diamond T4, [-20 to 15] 
+Game 228: 1W vs Orzhov, near identical deck, close game, Diamond T4 -> Diamond T4 1/6 [9 to 0]
+Game 229: 1L vs mono-red, cacophony swamp, turn 2 insta-win, Diamond T4 [-2 to 20] 
+
+Game 221 to 230: 4-6 (40% win ratio)
+
+Game 231: 1L vs mono-red, lots of instants to give bonuses to creatures, Diamond T4 [-12 to 14]
+Game 232: 1L vs Rakdos, close game, Diamond T4 [-3 to 4]
+Game 233: 1L vs Golgari, Diamond T4 [-2 to 23]
+Game 234: 1L vs Orzhov, Diamond T4 close game, [-5 to 13]
+Game 235: 1L vs mono-black, mana flooded, pulled valgavoth from graveyard, Diamond T4 [-3 to 14]
+Game 236: 1W vs mono-red, smooth win, Diamond T4 -> Diamond T4 1/6 [17 to 0] 
+Game 237: 1W vs Azorius, close game, Diamond T4 1/6 -> Diamond T4 2/6 [9 to 0]
+Game 238: 1L vs Orzhov, close game, Diamond T4 2/6 -> Diamond T4 1/6 [-2 to 8]
+Game 239: 1L vs mono-black, mana screwed, Diamond T4 1/6 -> Diamond T4 [0 to 20]
+Game 240: 1L vs Golgari, didn't do enough damage, this deck requires a one turn kill or i die, Diamond T4 [-7 to 14]
+
+Game 231 to 240: 2-8 (20% win ratio)
+
+Game 241: 1L vs Boros, mana screwed, i had 3 lands, they had 7 lands, [-3 to 21] 
+Game 242: 1W vs mono-black, relied on food tokens to do damage, not strong deck, Diamond T4 -> Diamond T4 1/6 [18 to 0]
+Game 243: 1W vs mono-white, opponent had weak rabbit deck, Diamond T4 1/6 -> Diamond T4 2/6 [17 to -3]  
+Game 244: 1W vs Boros, opponent conceded, Diamond T4 1/6 -> Diamond T4 2/6 [15 to 13] 
+Game 245: 1W vs Rakdos, opponent conceded, Diamond T4 2/6 -> Diamond T4 3/6 [28 to 4]
+Game 246: 1L vs mono-black, mana screwed, Diamond T4 3/6 -> Diamond T4 2/6 [17 to 0] 
+Game 247: 1W vs Azorius, close game, Diamond T4 2/6 -> Diamond T4 3/6 [13 to 0]
+Game 248: 1L vs Selesnya, too many creatures not enough blockers/counters, Diamond T4 3/6 -> Diamond T4 2/6 [-13 to 18] 
+Game 249: 1L vs Jund, mana screwed, had 2 mana entire match, Diamond T4 2/6 -> Diamond T4 1/6 [-7 to 25] 
+Game 250: 1W vs Jund, close game, Diamond T4 1/6 -> Diamond T4 2/6 [25 to 0]  
+
+Game 241 to 250: 6-4 (60% win ratio)
+
+Game 251: 1L vs Rakdos, no chance at winning, Diamond T4 2/6 -> Diamond T4 1/6 [0 to 20]
+Game 252: 1L vs mono-black, mana screwed, hand exiled and all creatures destroyed, Diamond T4 1/6 -> Diamond T4 [29 to 0]
+Game 253: 1L vs mono-red, aggro, turn 3 dead to 24 damage, Diamond T4 [-4 to 20] 
+Game 254: 1W vs Golgari, smooth win, Diamond T4 -> Diamond T4 1/6 [20 to 0]
+Game 255: 1L vs mono-black, mana screwed, Diamond T4 1/6 -> Diamond T4 [20 to 0]
+Game 256: 1L vs Orzhov, mana screwed, Diamond T4
+Game 257: 1L vs Boros, mana screwed, Diamond T4
+Game 258: 1W vs mono-black, Diamond T4 1/6 -> Diamond T4 2/6 [15 to 0]
+Game 259: 1W vs Orzhov, Diamond T4 2/6 -> Diamond T4 3/6 [21 to 0]
+Game 260: 1L vs mono-black, didn't do enough damage to win, Diamond T4 3/6 -> Diamond T4 2/6 [0 to 24]
+
+Game 251 to 260: 3-7 (30% win ratio)
+
+Game 261: 1L vs mono-black, mana flooded, not enough creatures, lost by turn 3, Diamond T4 2/6 -> Diamond T4 1/6 [0 to 11] 
+Game 262: 1W vs mono-green, mana screwed, close game, Diamond T4 1/6 -> Diamond T4 2/6 [20 to 0] 
+Game 263: 1L vs Selesnya, close game, Diamond T4 2/6 -> Diamond T4 1/6 [0 to 11] 
+Game 264: 1W vs Gruul, smooth win, Dilamond T4 1/6 -> Diamond T4 2/6 [14 to 0]
+Game 265: 1L vs mono-red, didn't kill creatures fast enough, Diamond T4 2/6 -> Diamond T4 1/6 [-1 to 15]\
+Game 266: 1W vs Orzhov, close game, Diamond T4 -> Diamond T4 1/6 [0 to 15] 
+Game 267: 1W vs Orzhov, smooth win, Diamond T4 1/6 -> Diamond T4 2/6 [26 to 0] 
+Game 268: 1W vs Simic, smooth win, Diamond T4 2/6 -> Diamond T4 3/6 [31 to 0]
+Game 269: 1L vs Esper, needed to do more damage early, Diamond T4 3/6 -> Diamond T4 2/6 [19 to 0]
+Game 270: 1W vs mono-black, close game drew Starscape Cleric with 3 hp left, Diamond T4 2/6 -> Diamond T4 3/6 [3 to 0]
+
+Game 261 to 270: 6-4 (60% win ratio)
+
+Game 271: 1W vs Orzhov, no chance, Diamond T4 3/6 -> Diamond T4 2/6 [0 to 12]
+Game 272: 1W vs Golgari, close game, Diamond T4 2/6 -> Diamond T4 3/6 [0 to 25] 
+Game 273: 1L vs Orzhov, mana screwed, Diamond T4 3/6 -> Diamond T4 2/6 [0 to 26] 
+Game 274: 1W vs mono-black, close game, Diamond T4 2/6 -> Diamond T4 3/6 [13 to 0] 
+Game 275: 1L vs Izzet, mana screwed, took to long to get things on the board, Diamond T4 3/6 -> Diamond T4 2/6 [16 to 0]
+Game 276: 1W vs Rakdos, close game, Diamond T4 2/6 -> Diamond T4 3/6 [20 to 0]
+Game 277: 1W vs mono-blue, opponent conceded due not being able to counter spells, Diamond T4 3/6 -> Diamond T4 4/6 [20 to 20] 
+Game 278: 1L vs Golgari, mana screwed had no white mana, lose by default, Diamond T4 4/6 -> Diamond T4 3/6 [20 to 0]
+Game 279: 1W vs Mardu, mana screwed, but was able to pull of a w, Diamond T4 3/6 -> Diamond T4 4/6, [27 to 0]
+Game 280: 1L vs mono-red, no cratures starting hand 4 lands, typical mono-red douchebag, Diamond T4 4/6 -> Diamond T4 3/6 [19 to 0]
+
+Game 271 to 280: 6-4 (60% win ratio)
+
+Game 281: 1L vs mono-green, 4 lands in starting hand, luck of the draw, Diamond T4 3/6 -> Diamond T4 2/6
+Game 282: 1L vs Dimir, poison deck, nothing I could do to stop the poison, Diamond T4 2/6 -> Diamond T4 1/6 
+Game 283: 1W vs Orzhov, 2 lands in starting hand, opponent relied too much on a single card, Diamond T4 1/6 -> Diamond T4 2/6
+Game 284: 1W vs mono-red, smooth win, Diamond T4 2/6 -> Diamond T4 3/6 
+Game 285: 1L vs Izzet, didnt do enough damage fast enough, Diamond T4 3/6 -> Diamond T4 2/6 
+Game 286: 1L vs Rakdos, mana screwed, no creatures, dead on turn 5, Diamond T4 2/6 -> Diamond T4 1/6
+Game 287: 1W vs Rakdos, opponent was mana screwed, Diamond T4 1/6 -> Diamond T4 2/6 
+Game 288: 1L vs Esper, mana screwed, Diamond T4 2/6 -> Diamond T4 1/6 
+Game 289: 1W vs Selesnya, smooth win, Diamond T4 1/6 -> Diamond T4 2/6 
+Game 290: 1L vs Izzet, close game, Diamond T4 2/6 -> Diamond T4 1/6 
+
+Game 281 to 290: 4-6 (40% win ratio)
+
+Game 291: 1W vs all colors, opponent conceded, Diamond T4 1/6 -> Diamond T4 2/6  
+Game 292: 1W vs Orzhov, opponent conceded, Diamond T4 2/6 -> Diamond T4 3/6
+Game 293: 1W vs Orzhov, mana screwed, leyline of hope is amazing, Diamond T4 3/6 -> Diamond T4 4/6
+Game 294: 1L vs mono-red, mana screwed, 2 lands to 5 lands, Diamond T4 4/6 -> Diamond T4 3/6
+Game 295: 1L vs Rakdos, mana screwed, could do nothing, Diamond T4 3/6 -> Diamond T4 2/6
+Game 296: 1L vs Golgari, mana screwed, Diamond T4 2/6 -> Diamond T4 1/6 
+Game 297: 1W vs Boros, easy win, Diamond T4 1/6 -> Diamond T4 2/6 
+Game 298: 1L vs Dune, close game, couldnt block trample creatures, Diamond T4 2/6 -> Diamond T4 1/6
+Game 299: 1L vs Orzhov, mana screwed, 3 lands to 7 lands, Diamond T4 1/6 -> Diamond T4
+Game 300: 1L vs Mardu, mana screwed, Diamond T4
+
+Game 291 to 300: 4-6, more lands needed with how consistently im mana screwed, (40% win ratio)
+Added two lands to deck
+
+Game 301: 1W vs Selesnya, cocky player got humbled, Diamond T4 -> Diamond T4 1/6 
+Game 302: 1L vs Azorius, enchanted creatures out the wazoo, Diamond T4 1/6 -> Diamond T4
+Game 303: 1L vs Orzhov, mana screwed, had all plains but no swamps, 3 mana to 6 mana and they brought out Valgavoth, Terror Eater, Diamond T4
+Game 304: 1W vs Dimir, mana screwed, opponent conceded, Diamond T4 -> Diamond T4 1/6 
+Game 305: 1W vs Golgari, leyline of hope in starting hand, smooth win, Diamond T4 1/6 -> Diamond T4 2/6
+Game 306: 1W vs Rakdos, cocky opponent was humbled, Diamond T4 2/6 -> Diamond T4 3/6 
+Game 307: 1W vs Boros, mana screwed not enough white/black have a lot of colorless, Diamond T4 3/6 -> Diamond T4 4/6
+Game 308: 1L vs Azorius, mana screwed, 3 mana to 9 mana, no way i was going to win that match, Diamond T4 4/6 -> Diamond T4 3/6
+Game 309: 1L vs all colors, mana flooded, now i have too many lands and cant play anything other than lands, Diamond T4 3/6 -> Diamond T4 2/6
+Game 310: 1L vs Mardu, mana flooded, too many lands no creatures, Diamond T4 2/6 -> Diamond T4 1/6 
+
+Game 301 to 310: 5-5 (50% win ratio)
+
+Game 311: 1W vs Boros, opponent tried to play a Boros control deck, Diamond T4 1/6 -> Diamond T4 2/6
+Game 312: 1W vs Sultai, opponent tried to waste time, I played the time wasting game and made them concede, Diamond T4 2/6 -> Diamond T4 3/6
+Game 313: 1W vs Orzhov, mana screwed with colorless mana, won by luck of draw, Diamond T4 3/6 -> Diamond T4 4/6  
+Game 314: 1W vs Orzhov, insane match got to 53 hp, Diamond T4 4/6 -> Diamond T4 5/6
+Game 315: 1W vs Dimir, smooth win, Diamond T4 5/6 -> Diamond T3 
+Game 316: 1W vs Rakdos, smooth win, Diamond T3 -> Diamond T3 1/6
+Game 317: 1L vs Orzhov, close game I played recklessly at the end, Diamond T3 
+Game 318: 1L vs Golgari, annoying poison deck that played super slow, Diamond T3
+Game 319: 1L vs mono-green, close game, Diamond T3 -> Diamond T4 5/6
+Game 320: 1L vs Abzan, mana screwed, Diamond T4 5/6 -> Diamond T4 4/6 
+
+Game 311 to 320: 6-4 (60% win ratio)
+
+Game 321: 1W vs Azorius, close game, Diamond T4 4/6 -> Diamond T4 5/6
+Game 322: 1W vs Golgari, smooth game, Diamond T4 5/6 -> Diamond T3 
+Game 323: 1W vs Dimir, close game, Diamond T3 -> Diamond T3 1/6
+Game 324: 1W vs all colors, smooth win, Diamond T3 1/6 -> Diamond T3 2/6 
+Game 325: 1L vs Gruul, close game, Diamond T3 2/6 -> Diamond T3 1/6
+Game 326: 1L vs mono-black, destroyed all creatures and exiled my hand, Diamond T3 1/6 -> Diamond T3
+Game 327: 1W vs mono-black, smooth win Diamond T3 -> Diamond T3 1/6
+Game 328: 1W vs Dimir, mill deck, i lose life with bandit's talent, which triggers Lunar Convocation, Diamond T3 1/6 -> Diamond T3 2/6
+Game 329: 1W vs mono-red, smooth win, Diamond T3 2/6 -> Diamond T3 3/6
+Game 330: 1W vs mono-black, cocky player got humbled, Diamond T3 3/6 -> Diamond T3 4/6 
+
+Game 321 to 330: 8-2 (80% win ratio)
+
+Game 331: 1W vs Boros, smooth win, Diamond T3 4/6 -> Diamond T3 5/6
+Game 332: 1W vs Azorius, smooth win, Diamond T3 5/6 -> Diamond T2  
+Game 333: 1L vs Azorius, very close game, Diamond T2
+Game 334: 1L vs Orzhov, played demon room card where i lost 2 life, Diamond T2  
+Game 335: 1L vs Sultai, mana screwed, super annoying player, Diamond T2
+Game 336: 1W vs Dimir, smooth win, Diamond T2 -> Diamond T2 1/6 
+Game 337: 1W vs mono-white, smooth win, Diamond T2 1/6 -> Diamond T2 2/6
+Game 338: 1L vs Rakdos, not even close game, Diamond T2 2/6 -> Diamond T2 1/6
+Game 339: 1W vs Boros, smooth win, Diamond T2 1/6 -> Diamond T2 2/6 
+Game 340: 1L vs Azorius, close game, Diamond T2 2/6 -> Diamond T2 1/6   
+
+Game 331 to 340: 5-5 (50% win ratio)
+
+Game 341: 1W vs Bant, smooth win, Diamond T2 1/6 -> Diamond T2 2/6
+Game 342: 1L vs mono-white, poison deck, couldn't keep board clear of poison, Diamond T2 2/6 -> Diamond T2 1/6
+Game 343: 1W vs Orzhov, close game, Diamond T2 1/6 -> Diamond T2 2/6
+Game 344: vs 
+
+Game 341 to 350: 2-1

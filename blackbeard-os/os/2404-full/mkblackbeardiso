@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+set -e -u
+shopt -s extglob
+
+# Control the environment
+umask 0022
+export LC_ALL="C.UTF-8"
+if [[ -v LANGUAGE ]]; then
+  unset LANGUAGE
+fi
+[[ -v SOURCE_DATE_EPOCH ]] || printf -v SOURCE_DATA_EPOCH '%(%s)T' -1
+export SOURCE_DATE_EPOCH
+
+# Set application name from script file name
+app_name="${0##*/}"
+
+# Define variables
+pkg_list=()
+bootstrap_pkg_list=()
+quiet=""
+work_dir=""
+out_dir=""
+gpg_key=""
+gpg_sender=""
+iso_name=""
+gpg_sender=""
+iso_name=""
+iso_label=""
+iso_uuid=""
+iso_publisher=""
+iso_version=""
+install_dir=""
+arch=""
+pacman_conf=""
+packages=""
+bootstrap_packages=""
+pacstrap_dir=""
+declare -i rm_work_dir=0
+buildmodes=()
+bootmodes=()
+airootfs_image_type=""
+airootfs_image_tool_options=()
+cert_list=()
+declare -A file_permissions=()
+efibootimg=""
+efiboot_files=()
+readonly ucodes=('intel-uc.img' 'intel-ucode.img' 'amd-uc.img' 'amd-ucode.img' 'early_ucode.cpio' 'microcode.cpio')
+
