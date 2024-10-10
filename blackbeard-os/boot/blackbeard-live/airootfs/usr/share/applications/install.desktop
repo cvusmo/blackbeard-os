@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=blackbeard installer
-Comment=blackbeard arch distro
-Exec=sudo /root/install.sh
-Icon=system-run
-Terminal=true
-Type=Application
-Categories=System;
-
